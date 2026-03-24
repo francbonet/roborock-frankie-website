@@ -24,7 +24,7 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: var(--font-size-section-title);
   font-weight: 700;
   margin-bottom: 3rem;
   color: var(--primary);
@@ -120,7 +120,7 @@
 
 .challenges-learnings h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: var(--font-size-section-title);
   margin-bottom: 3rem;
   color: var(--color-primary);
 }
@@ -159,7 +159,7 @@
 }
 
 .challenges-title {
-  font-size: 2.5rem;
+  font-size: var(--font-size-section-title);
   margin-bottom: 2rem;
   color: var(--color-text-primary);
   text-align: center;
@@ -172,9 +172,7 @@
     padding: 4rem 1.5rem;
   }
 
-  .section-title {
-    font-size: 2rem;
-  }
+
 
   .challenges-statement {
     font-size: 1.1rem;
