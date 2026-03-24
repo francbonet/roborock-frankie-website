@@ -28,6 +28,13 @@ export const translations = {
       imageAlt: "Frankie, el robot Roborock S5",
       uiAlt: "Interfície d'usuari de Frankie amb els ulls blaus"
     },
+    gallery: {
+      title: "Galeria multimèdia",
+      subtitle: "Veure Frankie en acció: fotos i vídeos reals del robot",
+      lightbox: "Modal de galeria",
+      close: "Tancar",
+      videoNotSupported: "El teu navegador no suporta la reproducció de vídeo."
+    },
     whatCanDo: {
       title: "Què pot fer Frankie?",
       intro: "Frankie no només executa ordres.\nInterpreta intenció, selecciona una acció i la tradueix en ordres reals sobre el robot.\n\nEntre altres coses, pot:",
@@ -127,6 +134,13 @@ export const translations = {
       imageAlt: "Frankie, el robot Roborock S5",
       uiAlt: "Interfaz de usuario de Frankie con los ojos azules"
     },
+    gallery: {
+      title: "Galería multimedia",
+      subtitle: "Ver Frankie en acción: fotos y vídeos reales del robot",
+      lightbox: "Modal de galería",
+      close: "Cerrar",
+      videoNotSupported: "Tu navegador no soporta la reproducción de vídeo."
+    },
     whatCanDo: {
       title: "¿Qué puede hacer Frankie?",
       intro: "Frankie no solo ejecuta órdenes.\nInterpreta intención, selecciona una acción y la traduce en órdenes reales sobre el robot.\n\nEntre otras cosas, puede:",
@@ -225,6 +239,13 @@ export const translations = {
       quote: "Yes, technically it cleans. But it also has character.",
       imageAlt: "Frankie, the Roborock S5 robot",
       uiAlt: "Frankie's user interface with blue eyes"
+    },
+    gallery: {
+      title: "Media Gallery",
+      subtitle: "See Frankie in action: real photos and videos of the robot",
+      lightbox: "Gallery modal",
+      close: "Close",
+      videoNotSupported: "Your browser does not support video playback."
     },
     whatCanDo: {
       title: "What can Frankie do?",
