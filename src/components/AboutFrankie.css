@@ -1,6 +1,6 @@
 .about-frankie {
   padding: 4rem 2rem;
-  background: var(--color-surface);
+  background: var(--background-primary);
   color: var(--color-text);
   position: relative;
   overflow: hidden;
