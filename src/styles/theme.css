@@ -42,6 +42,9 @@
   --font-size-4xl: 2.5rem;     /* 40px */
   --font-size-5xl: 3rem;       /* 48px */
   
+  /* Mida de títols de secció */
+  --font-size-section-title: clamp(2rem, 5vw, 3rem); /* 48px en desktop, escalable a mòbil */
+  
   /* 🔲 Border Radius */
   --radius-sm: 0.25rem;    /* 4px */
   --radius-md: 0.5rem;     /* 8px */

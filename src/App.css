@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: var(--font-size-section-title);
   font-weight: 500;
   color: var(--color-text-primary);
   margin-bottom: 1rem;
