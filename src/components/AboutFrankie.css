@@ -1,6 +1,7 @@
 .about-frankie {
-  padding: 4rem 1.5rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 2rem;
+  background: var(--background-primary);
+  color: var(--color-text);
   position: relative;
   overflow: hidden;
 }
@@ -93,6 +94,26 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about-frankie h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.content {
+  background: var(--color-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+.highlight {
+  color: var(--color-hover);
+  font-weight: 600;
 }
 
 /* Tablet */

@@ -1,6 +1,6 @@
 .final-cta {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: var(--background-accent);
   position: relative;
   overflow: hidden;
 }
@@ -164,6 +164,11 @@
 
   .final-cta-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
   }
 
   .final-cta-description {
