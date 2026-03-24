@@ -8,3 +8,18 @@ export function useLanguage() {
   }
   return context
 }
+
+export const t = (key: string, lang: string, translations: any): string => {
+  const keys = key.split('.')
+  let value = translations[lang]
+  
+  for (const k of keys) {
+    if (value && typeof value === 'object') {
+      value = value[k]
+    } else {
+      return key
+    }
+  }
+  
+  return typeof value === 'string' ? value : key
+}
