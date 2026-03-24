@@ -1,7 +1,7 @@
 .ai-layer {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #ffffff;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .ai-layer__container {
