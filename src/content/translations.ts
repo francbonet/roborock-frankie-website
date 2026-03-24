@@ -160,6 +160,16 @@ export const translations = {
       message: "És una barreja de: hardware, software, UX, IA i bastant prova-error.",
     },
   },
+  finalCTA: {
+    title: 'Frankie encara està evolucionant',
+    description: 'Això no és un producte acabat.',
+    message: "És un laboratori viu sobre robòtica personal, interfícies i agents d'IA. Si t'agrada la combinació de hardware hackejat + software + IA, aquest projecte és exactament això.",
+    buttons: {
+      viewProject: 'Veure el projecte',
+      contact: 'Contactar',
+      viewDemos: 'Veure demos',
+    },
+  },
   es: {
     languageSelector: {
       label: 'Idioma',
@@ -309,6 +319,16 @@ export const translations = {
         { icon: '🎨', text: 'hacer que todo parezca un solo producto' },
       ],
       message: "Es una mezcla de: hardware, software, UX, IA y bastante prueba-error.",
+    },
+  },
+  finalCTA: {
+    title: 'Frankie aún está evolucionando',
+    description: 'Esto no es un producto terminado.',
+    message: 'Es un laboratorio vivo sobre robótica personal, interfaces y agentes de IA. Si te gusta la combinación de hardware hackeado + software + IA, este proyecto es exactamente eso.',
+    buttons: {
+      viewProject: 'Ver el proyecto',
+      contact: 'Contactar',
+      viewDemos: 'Ver demos',
     },
   },
   en: {
@@ -462,12 +482,32 @@ export const translations = {
       message: "It's a mix of: hardware, software, UX, AI and plenty of trial-and-error.",
     },
   },
+  finalCTA: {
+    title: 'Frankie is still evolving',
+    description: "This isn't a finished product.",
+    message: "It's a living laboratory about personal robotics, interfaces, and AI agents. If you like the combination of hacked hardware + software + AI, this project is exactly that.",
+    buttons: {
+      viewProject: 'View project',
+      contact: 'Contact',
+      viewDemos: 'View demos',
+    },
+  },
   challenges: {
     title: string;
     statement: string;
     subtitle: string;
     items: Array<{ icon: string; text: string }>;
     message: string;
+  };
+  finalCTA: {
+    title: string;
+    description: string;
+    message: string;
+    buttons: {
+      viewProject: string;
+      contact: string;
+      viewDemos: string;
+    };
   };
 };
 
