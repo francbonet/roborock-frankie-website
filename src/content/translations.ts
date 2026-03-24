@@ -14,8 +14,10 @@ export const translations = {
       label: 'Idioma',
     },
     hero: {
-      title: "Roborock S5 + ChatGPT",
-      subtitle: "Un robot aspirador amb IA que entén ordres en llenguatge natural",
+      title: 'Frankie - Un Roborock S5 hackejat amb cervell d\'IA',
+      subtitle: 'No és només un aspirador robot. És un experiment de robòtica domèstica on un vell Roborock S5 rep una segona vida amb una capa d\'intel·ligència artificial, control per veu i una interfície pròpia.',
+      ctaDemo: 'Veure demo',
+      ctaHowBuilt: 'Com està construït',
       cta: "Descobreix el projecte"
     },
     aboutFrankie: {
@@ -25,16 +27,54 @@ export const translations = {
       quote: "Sí, tècnicament neteja. Però també té caràcter.",
       imageAlt: "Frankie, el robot Roborock S5",
       uiAlt: "Interfície d'usuari de Frankie amb els ulls blaus"
-    }
+    },
+    whatCanDo: {
+      title: "Què pot fer Frankie?",
+      intro: "Frankie no només executa ordres.\nInterpreta intenció, selecciona una acció i la tradueix en ordres reals sobre el robot.\n\nEntre altres coses, pot:",
+      features: [
+        {
+          icon: "🧠",
+          title: "Entendre ordres",
+          description: "Interpreta el que li dius i decideix què ha de fer."
+        },
+        {
+          icon: "🤖",
+          title: "Controlar el robot",
+          description: "Pot iniciar, pausar, reprendre, parar o tornar a la base."
+        },
+        {
+          icon: "🗺️",
+          title: "Navegar per la casa",
+          description: "Pot anar a coordenades concretes o netejar habitacions/segments."
+        },
+        {
+          icon: "📋",
+          title: "Gestionar tasques",
+          description: "Té cua de tasques, historial i temporitzadors."
+        },
+        {
+          icon: "🔊",
+          title: "Respondre amb veu",
+          description: "Genera respostes i feedback de veu per fer la interacció més natural."
+        },
+        {
+          icon: "📊",
+          title: "Mostrar estat en temps real",
+          description: "Bateria, estat, base, ventilador, àrea netejada i molt més."
+        }
+      ]
+    },
   },
   es: {
     languageSelector: {
       label: 'Idioma',
     },
     hero: {
-      title: "Roborock S5 + ChatGPT",
-      subtitle: "Un robot aspirador con IA que entiende órdenes en lenguaje natural",
-      cta: "Descubre el proyecto"
+      title: 'Frankie - Un Roborock S5 hackeado con cerebro de IA',
+      subtitle: 'No es solo un aspirador robot. Es un experimento de robótica doméstica donde un viejo Roborock S5 recibe una segunda vida con una capa de inteligencia artificial, control por voz y una interfaz propia.',
+      ctaDemo: 'Ver demo',
+      ctaHowBuilt: 'Cómo está construido',
+      cta: "Descobreix el projecte"
     },
     aboutFrankie: {
       title: "¿Quién es Frankie?",
@@ -43,15 +83,53 @@ export const translations = {
       quote: "Sí, técnicamente limpia. Pero también tiene carácter.",
       imageAlt: "Frankie, el robot Roborock S5",
       uiAlt: "Interfaz de usuario de Frankie con los ojos azules"
-    }
+    },
+    whatCanDo: {
+      title: "¿Qué puede hacer Frankie?",
+      intro: "Frankie no solo ejecuta órdenes.\nInterpreta intención, selecciona una acción y la traduce en órdenes reales sobre el robot.\n\nEntre otras cosas, puede:",
+      features: [
+        {
+          icon: "🧠",
+          title: "Entender órdenes",
+          description: "Interpreta lo que le dices y decide qué debe hacer."
+        },
+        {
+          icon: "🤖",
+          title: "Controlar el robot",
+          description: "Puede iniciar, pausar, reanudar, parar o volver a la base."
+        },
+        {
+          icon: "🗺️",
+          title: "Navegar por la casa",
+          description: "Puede ir a coordenadas concretas o limpiar habitaciones/segmentos."
+        },
+        {
+          icon: "📋",
+          title: "Gestionar tareas",
+          description: "Tiene cola de tareas, historial y temporizadores."
+        },
+        {
+          icon: "🔊",
+          title: "Responder con voz",
+          description: "Genera respuestas y feedback de voz para hacer la interacción más natural."
+        },
+        {
+          icon: "📊",
+          title: "Mostrar estado en tiempo real",
+          description: "Batería, estado, base, ventilador, área limpiada y mucho más."
+        }
+      ]
+    },
   },
   en: {
     languageSelector: {
       label: 'Language',
     },
     hero: {
-      title: "Roborock S5 + ChatGPT",
-      subtitle: "A vacuum robot with AI that understands natural language commands",
+      title: 'Frankie - A Roborock S5 hacked with AI brain',
+      subtitle: 'Not just a robot vacuum. It\'s a home robotics experiment where an old Roborock S5 gets a second life with an artificial intelligence layer, voice control and its own interface.',
+      ctaDemo: 'View demo',
+      ctaHowBuilt: 'How it\'s built',
       cta: "Discover the project"
     },
     aboutFrankie: {
@@ -61,7 +139,43 @@ export const translations = {
       quote: "Yes, technically it cleans. But it also has character.",
       imageAlt: "Frankie, the Roborock S5 robot",
       uiAlt: "Frankie's user interface with blue eyes"
-    }
+    },
+    whatCanDo: {
+      title: "What can Frankie do?",
+      intro: "Frankie doesn't just execute commands.\nIt interprets intent, selects an action, and translates it into real commands for the robot.\n\nAmong other things, it can:",
+      features: [
+        {
+          icon: "🧠",
+          title: "Understand commands",
+          description: "Interprets what you tell it and decides what to do."
+        },
+        {
+          icon: "🤖",
+          title: "Control the robot",
+          description: "Can start, pause, resume, stop or return to base."
+        },
+        {
+          icon: "🗺️",
+          title: "Navigate the house",
+          description: "Can go to specific coordinates or clean rooms/segments."
+        },
+        {
+          icon: "📋",
+          title: "Manage tasks",
+          description: "Has task queue, history and timers."
+        },
+        {
+          icon: "🔊",
+          title: "Respond with voice",
+          description: "Generates responses and voice feedback to make interaction more natural."
+        },
+        {
+          icon: "📊",
+          title: "Show real-time status",
+          description: "Battery, status, base, fan, cleaned area and much more."
+        }
+      ]
+    },
   }
 };
 
