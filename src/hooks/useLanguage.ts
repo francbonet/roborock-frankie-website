@@ -9,9 +9,10 @@ export function useLanguage() {
   return context
 }
 
-export const t = (key: string, lang: string, translations: any): string => {
+export const t = (key: string): string => {
+  const { language } = useLanguage()
   const keys = key.split('.')
-  let value = translations[lang]
+  let value = translations[language]
   
   for (const k of keys) {
     if (value && typeof value === 'object') {

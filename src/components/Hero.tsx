@@ -1,9 +1,8 @@
 import React from 'react';
-import { useLanguage } from '../hooks/useLanguage';
+import { t, useLanguage } from '../hooks/useLanguage';
 import './Hero.css';
 
 const Hero: React.FC = () => {
-  const { t } = useLanguage();
 
   const handleDemoClick = () => {
     const demoSection = document.getElementById('demo');
