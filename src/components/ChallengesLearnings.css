@@ -112,6 +112,62 @@
   border-left: 4px solid #00adb5;
 }
 
+.challenges-learnings {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  background-color: var(--color-bg-primary);
+}
+
+.challenges-learnings h2 {
+  text-align: center;
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-card {
+  padding: var(--spacing-xl);
+  background-color: var(--color-bg-card);
+  border-radius: var(--border-radius-lg);
+  transition: background-color var(--transition-base);
+}
+
+.content-card:hover {
+  background-color: var(--color-bg-card-hover);
+}
+
+.content-card h3 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.content-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-card li {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  font-size: var(--font-size-base);
+}
+
+.content-card li:last-child {
+  border-bottom: none;
+}
+
 @media (max-width: 768px) {
   .challenges-section {
     padding: 4rem 1.5rem;

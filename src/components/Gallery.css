@@ -35,24 +35,26 @@
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .gallery-item {
   position: relative;
   aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-base);
+  box-shadow: var(--shadow-md);
   background: #0f0f1e;
   border: 1px solid rgba(0, 245, 255, 0.1);
 }
 
 .gallery-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 245, 255, 0.3);
+  box-shadow: var(--shadow-xl);
 }
 
 .gallery-item:focus {
