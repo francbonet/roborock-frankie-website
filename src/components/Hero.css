@@ -133,7 +133,7 @@
 /* Tablet and Desktop */
 @media (min-width: 768px) {
   .hero {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
 
   .hero-container {
