@@ -107,45 +107,45 @@ export const translations = {
         'App iOS per a la interfície',
       ],
     },
-  gallery: {
-    title: 'Frankie en Acció',
-    subtitle: 'Veure Frankie en acció: comandes de veu, navegació autònoma i interacció intel·ligent',
-    lightbox: {
-      ariaLabel: 'Lightbox de mitjans',
-      close: 'Tancar',
-      previous: 'Anterior',
-      next: 'Següent',
-      videoNotSupported: 'El teu navegador no suporta la etiqueta de vídeo.',
+    gallery: {
+      title: 'Frankie en Acció',
+      subtitle: 'Veure Frankie en acció: comandes de veu, navegació autònoma i interacció intel·ligent',
+      lightbox: {
+        ariaLabel: 'Lightbox de mitjans',
+        close: 'Tancar',
+        previous: 'Anterior',
+        next: 'Següent',
+        videoNotSupported: 'El teu navegador no suporta la etiqueta de vídeo.',
+      },
+      media: {
+        video1: {
+          src: 'https://example.com/videos/frankie-demo.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          alt: 'Frankie responent a comandes de veu',
+        },
+        image1: {
+          src: 'https://example.com/images/frankie-robot.jpg',
+          alt: 'Frankie el robot Roborock S5',
+        },
+        image2: {
+          src: 'https://example.com/images/frankie-interface.jpg',
+          alt: 'Interfície de pantalla blava de Frankie',
+        },
+        image3: {
+          src: 'https://example.com/images/frankie-app.jpg',
+          alt: 'Aplicació web i iOS de Frankie',
+        },
+        video2: {
+          src: 'https://example.com/videos/frankie-cleaning.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          alt: 'Frankie netejant i tornant a la base',
+        },
+        image4: {
+          src: 'https://example.com/images/frankie-voice.jpg',
+          alt: 'Interacció de veu de Frankie amb ChatGPT',
+        },
+      },
     },
-    media: {
-      video1: {
-        src: 'https://example.com/videos/frankie-demo.mp4',
-        thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
-        alt: 'Frankie responent a comandes de veu',
-      },
-      image1: {
-        src: 'https://example.com/images/frankie-robot.jpg',
-        alt: 'Frankie el robot Roborock S5',
-      },
-      image2: {
-        src: 'https://example.com/images/frankie-interface.jpg',
-        alt: 'Interfície de pantalla blava de Frankie',
-      },
-      image3: {
-        src: 'https://example.com/images/frankie-app.jpg',
-        alt: 'Aplicació web i iOS de Frankie',
-      },
-      video2: {
-        src: 'https://example.com/videos/frankie-cleaning.mp4',
-        thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
-        alt: 'Frankie netejant i tornant a la base',
-      },
-      image4: {
-        src: 'https://example.com/images/frankie-voice.jpg',
-        alt: 'Interacció de veu de Frankie amb ChatGPT',
-      },
-    },
-  },
     challenges: {
       title: 'El més difícil',
       statement: 'Aquest projecte no va de "connectar una API i ja està".',
@@ -158,6 +158,16 @@ export const translations = {
         { icon: '🎨', text: 'fer que tot plegat sembli un sol producte' },
       ],
       message: "És una barreja de: hardware, software, UX, IA i bastant prova-error.",
+    },
+    finalCTA: {
+      title: 'Frankie encara està evolucionant',
+      description: 'Això no és un producte acabat.',
+      message: "És un laboratori viu sobre robòtica personal, interfícies i agents d'IA. Si t'agrada la combinació de hardware hackejat + software + IA, aquest projecte és exactament això.",
+      buttons: {
+        viewProject: 'Veure el projecte',
+        contact: 'Contactar',
+        viewDemos: 'Veure demos',
+      },
     },
   },
   es: {
@@ -258,45 +268,45 @@ export const translations = {
         'App iOS para la interfaz',
       ],
     },
-  gallery: {
-    title: 'Frankie en Acción',
-    subtitle: 'Ver a Frankie en acción: comandos de voz, navegación autónoma e interacción inteligente',
-    lightbox: {
-      ariaLabel: 'Lightbox de medios',
-      close: 'Cerrar',
-      previous: 'Anterior',
-      next: 'Siguiente',
-      videoNotSupported: 'Tu navegador no soporta la etiqueta de vídeo.',
+    gallery: {
+      title: 'Frankie en Acción',
+      subtitle: 'Ver a Frankie en acción: comandos de voz, navegación autónoma e interacción inteligente',
+      lightbox: {
+        ariaLabel: 'Lightbox de medios',
+        close: 'Cerrar',
+        previous: 'Anterior',
+        next: 'Siguiente',
+        videoNotSupported: 'Tu navegador no soporta la etiqueta de vídeo.',
+      },
+      media: {
+        video1: {
+          src: 'https://example.com/videos/frankie-demo.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          alt: 'Frankie respondiendo a comandos de voz',
+        },
+        image1: {
+          src: 'https://example.com/images/frankie-robot.jpg',
+          alt: 'Frankie el robot Roborock S5',
+        },
+        image2: {
+          src: 'https://example.com/images/frankie-interface.jpg',
+          alt: 'Interfaz de pantalla azul de Frankie',
+        },
+        image3: {
+          src: 'https://example.com/images/frankie-app.jpg',
+          alt: 'Aplicación web e iOS de Frankie',
+        },
+        video2: {
+          src: 'https://example.com/videos/frankie-cleaning.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          alt: 'Frankie limpiando y regresando a la base',
+        },
+        image4: {
+          src: 'https://example.com/images/frankie-voice.jpg',
+          alt: 'Interacción de voz de Frankie con ChatGPT',
+        },
+      },
     },
-    media: {
-      video1: {
-        src: 'https://example.com/videos/frankie-demo.mp4',
-        thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
-        alt: 'Frankie respondiendo a comandos de voz',
-      },
-      image1: {
-        src: 'https://example.com/images/frankie-robot.jpg',
-        alt: 'Frankie el robot Roborock S5',
-      },
-      image2: {
-        src: 'https://example.com/images/frankie-interface.jpg',
-        alt: 'Interfaz de pantalla azul de Frankie',
-      },
-      image3: {
-        src: 'https://example.com/images/frankie-app.jpg',
-        alt: 'Aplicación web e iOS de Frankie',
-      },
-      video2: {
-        src: 'https://example.com/videos/frankie-cleaning.mp4',
-        thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
-        alt: 'Frankie limpiando y regresando a la base',
-      },
-      image4: {
-        src: 'https://example.com/images/frankie-voice.jpg',
-        alt: 'Interacción de voz de Frankie con ChatGPT',
-      },
-    },
-  },
     challenges: {
       title: 'Lo más difícil',
       statement: 'Este proyecto no va de "conectar una API y listo".',
@@ -309,6 +319,16 @@ export const translations = {
         { icon: '🎨', text: 'hacer que todo parezca un solo producto' },
       ],
       message: "Es una mezcla de: hardware, software, UX, IA y bastante prueba-error.",
+    },
+    finalCTA: {
+      title: 'Frankie aún está evolucionando',
+      description: 'Esto no es un producto terminado.',
+      message: 'Es un laboratorio vivo sobre robótica personal, interfaces y agentes de IA. Si te gusta la combinación de hardware hackeado + software + IA, este proyecto es exactamente eso.',
+      buttons: {
+        viewProject: 'Ver el proyecto',
+        contact: 'Contactar',
+        viewDemos: 'Ver demos',
+      },
     },
   },
   en: {
@@ -461,7 +481,17 @@ export const translations = {
       ],
       message: "It's a mix of: hardware, software, UX, AI and plenty of trial-and-error.",
     },
-  }
+    finalCTA: {
+      title: 'Frankie is still evolving',
+      description: "This isn't a finished product.",
+      message: "It's a living laboratory about personal robotics, interfaces, and AI agents. If you like the combination of hacked hardware + software + AI, this project is exactly that.",
+      buttons: {
+        viewProject: 'View project',
+        contact: 'Contact',
+        viewDemos: 'View demos',
+      },
+    },
+  },
 };
 
 export const getTranslations = (language: Language): any => {

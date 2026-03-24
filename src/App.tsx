@@ -7,6 +7,7 @@ import HowItWorks from './components/HowItWorks'
 import { AILayer } from './components/AILayer'
 import { Gallery } from './components/Gallery'
 import { ChallengesLearnings } from './components/ChallengesLearnings'
+import FinalCTA from './components/FinalCTA'
 import { LanguageProvider } from './context/LanguageContext'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <ChallengesLearnings />
       <HowItWorks />
       <AILayer />
+      <FinalCTA />
    </LanguageProvider> 
   )
 }
