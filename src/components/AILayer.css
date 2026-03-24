@@ -27,10 +27,11 @@
 }
 
 .ai-layer__intro {
-  font-size: 1.25rem;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--color-text-primary);
 }
 
 .ai-layer__explanation {
@@ -59,10 +60,11 @@
 }
 
 .ai-layer__commands-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--color-text-primary);
 }
 
 .ai-layer__commands-list {
@@ -109,9 +111,10 @@
 }
 
 .ai-layer__key-message {
-  font-size: 1.2rem;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: var(--color-text-primary);
 }
 
 .ai-layer__conclusion {
@@ -132,7 +135,7 @@
   }
 
   .ai-layer__intro {
-    font-size: 1.1rem;
+    font-size: 20px;
   }
 
   .ai-layer__explanation p,
@@ -145,7 +148,7 @@
   }
 
   .ai-layer__commands-title {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
 
   .ai-layer__commands-list {
@@ -153,7 +156,7 @@
   }
 
   .ai-layer__key-message {
-    font-size: 1.1rem;
+    font-size: 20px;
   }
 
   .ai-layer__conclusion {
