@@ -1,44 +1,50 @@
-import { useLanguage } from '../hooks/useLanguage';
-import { getTranslations } from '../content/translations';
 import './AboutFrankie.css';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../content/translations';
 
-export function AboutFrankie() {
+const AboutFrankie = () => {
   const { language } = useLanguage();
-  const t = getTranslations(language);
+  const t = translations[language].aboutFrankie;
 
   return (
-    <section className="about-frankie">
-      <div className="about-frankie__container">
-        <div className="about-frankie__content">
-          <h2 className="about-frankie__title">{t.aboutFrankie.title}</h2>
-          
-          <div className="about-frankie__text">
-            <p>{t.aboutFrankie.paragraph1}</p>
-            <p>{t.aboutFrankie.paragraph2}</p>
+    <section className="organism-section" id="about">
+      <div className="template-container">
+        <div className="about-frankie">
+          <div className="about-frankie__content">
+            <h2 className="atom-h2 about-frankie__title">{t.title}</h2>
+            <div className="about-frankie__text">
+              <p className="atom-p">{t.paragraph1}</p>
+              <p className="atom-p">{t.paragraph2}</p>
+            </div>
+            <blockquote className="molecule-quote about-frankie__quote">
+              <span className="molecule-quote__mark">"</span>
+              <p className="molecule-quote__text">{t.quote}</p>
+            </blockquote>
           </div>
-
-          <blockquote className="about-frankie__quote">
-            {t.aboutFrankie.quote}
-          </blockquote>
-        </div>
-
-        <div className="about-frankie__visuals">
-          <div className="about-frankie__image-wrapper">
-            <img 
-              src="/images/frankie-robot.jpg" 
-              alt={t.aboutFrankie.imageAlt}
-              className="about-frankie__image"
-            />
-          </div>
-          <div className="about-frankie__image-wrapper">
-            <img 
-              src="/images/frankie-ui.jpg" 
-              alt={t.aboutFrankie.uiAlt}
-              className="about-frankie__image"
-            />
+          <div className="about-frankie__visual">
+            <div className="about-frankie__image-primary">
+              <div className="molecule-image-frame molecule-image-frame--glow">
+                <img 
+                  src="/frankie-cleaning.jpg" 
+                  alt="Frankie the Roborock S5 cleaning" 
+                  className="molecule-image-frame__img"
+                />
+              </div>
+            </div>
+            <div className="about-frankie__image-secondary">
+              <div className="molecule-image-frame molecule-image-frame--minimal">
+                <img 
+                  src="/frankie-portrait.jpg" 
+                  alt="Frankie the Roborock S5" 
+                  className="molecule-image-frame__img"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default AboutFrankie;

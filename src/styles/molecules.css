@@ -3,6 +3,133 @@
  * Agrupacions d'atoms que formen components funcionals
  */
 
+/* Molecules - Combinacions d'atoms que formen components */
+
+/* Quote Molecule */
+.molecule-quote {
+  position: relative;
+  padding: 2rem 2rem 2rem 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 255, 0.05) 0%,
+    rgba(0, 212, 255, 0.02) 100%
+  );
+  border-left: 3px solid var(--color-primary);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.molecule-quote::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    transparent
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.molecule-quote__mark {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+.molecule-quote__text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Image Frame Molecule */
+.molecule-image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--color-background-secondary);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.molecule-image-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    transparent,
+    var(--color-primary)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.molecule-image-frame:hover::before {
+  opacity: 0.6;
+}
+
+.molecule-image-frame__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.molecule-image-frame:hover .molecule-image-frame__img {
+  transform: scale(1.05);
+}
+
+/* Glow variant */
+.molecule-image-frame--glow {
+  box-shadow: 
+    0 10px 40px rgba(0, 212, 255, 0.1),
+    0 0 0 1px rgba(0, 212, 255, 0.1);
+}
+
+.molecule-image-frame--glow:hover {
+  box-shadow: 
+    0 20px 60px rgba(0, 212, 255, 0.2),
+    0 0 0 1px rgba(0, 212, 255, 0.3),
+    0 0 40px rgba(0, 212, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Minimal variant */
+.molecule-image-frame--minimal {
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(230, 237, 243, 0.1);
+}
+
+.molecule-image-frame--minimal:hover {
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(230, 237, 243, 0.2);
+  transform: translateY(-2px);
+}
+
 /* === CARDS === */
 .molecule-card {
   background-color: var(--color-surface);
