@@ -1,30 +1,28 @@
 import React from 'react';
-import { LanguageProvider } from './context/LanguageContext';
-import { useLanguage } from './hooks/useLanguage';
-import { getTranslations } from './content/translations';
 import LanguageSelector from './components/LanguageSelector';
+import Hero from './components/Hero';
+import { LanguageProvider } from './hooks/useLanguage';
 import './App.css';
 
-const AppContent: React.FC = () => {
-  const { language } = useLanguage();
-  const t = getTranslations(language);
-
-  return (
-    <div className="App">
-      <LanguageSelector />
-      <h1>{t.greeting}</h1>
-      <h2>{t.projectTitle}</h2>
-      <p className="subtitle">{t.projectSubtitle}</p>
-    </div>
-  );
-};
-
-const App: React.FC = () => {
+function App() {
   return (
     <LanguageProvider>
-      <AppContent />
+      <div className="App">
+        <header className="app-header">
+          <LanguageSelector />
+        </header>
+        <main>
+          <Hero />
+          <section id="demo" style={{ minHeight: '50vh', padding: '2rem', background: '#f5f5f5' }}>
+            <h2>Demo Section (Coming Soon)</h2>
+          </section>
+          <section id="how-it-works" style={{ minHeight: '50vh', padding: '2rem', background: '#fff' }}>
+            <h2>How It's Built Section (Coming Soon)</h2>
+          </section>
+        </main>
+      </div>
     </LanguageProvider>
   );
-};
+}
 
 export default App;
