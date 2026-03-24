@@ -13,8 +13,10 @@ import { LanguageProvider } from './context/LanguageContext'
 function App() {
   return (
     <LanguageProvider>
-      <LanguageSelector />
-      <Hero />
+      <div style={{ position: 'relative' }}>
+        <LanguageSelector />
+        <Hero />
+      </div>
       <AboutFrankie />
       <WhatCanDo />
       <Gallery />

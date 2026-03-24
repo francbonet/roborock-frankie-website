@@ -1,36 +1,83 @@
 .language-selector {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  z-index: var(--z-sticky);
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: var(--space-xs);
+  background: var(--color-surface);
+  padding: var(--space-xs);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
   backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
 }
 
-.lang-btn {
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--color-border);
-  background-color: transparent;
-  color: var(--color-text-primary);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.lang-btn:hover {
-  background-color: var(--color-surface);
+.language-selector:hover {
+  box-shadow: var(--shadow-lg);
   border-color: var(--color-primary);
 }
 
+.lang-btn {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+  min-width: 48px;
+  position: relative;
+}
+
+.lang-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: -1;
+}
+
+.lang-btn:hover {
+  color: var(--color-text-primary);
+  transform: translateY(-1px);
+}
+
+.lang-btn:hover::before {
+  opacity: 0.1;
+}
+
 .lang-btn.active {
-  background-color: var(--color-primary);
   color: var(--color-background);
+}
+
+.lang-btn.active::before {
+  opacity: 1;
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-selector {
+    top: var(--space-md);
+    right: var(--space-md);
+    gap: 0;
+  }
+
+  .lang-btn {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--font-size-xs);
+    min-width: 40px;
+  }
 }
 
