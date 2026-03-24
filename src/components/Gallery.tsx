@@ -4,25 +4,29 @@ import './Gallery.css';
 
 interface MediaItem {
   type: 'image' | 'video';
-  url: string;
+  src: string;
   thumbnail?: string;
-  alt: { [key: string]: string };
+  alt: {
+    ca: string;
+    es: string;
+    en: string;
+  };
 }
 
 const mediaItems: MediaItem[] = [
   {
     type: 'video',
-    url: 'https://via.placeholder.com/800x450/1a1a2e/00d4ff?text=Frankie+Demo+Video',
-    thumbnail: 'https://via.placeholder.com/400x225/1a1a2e/00d4ff?text=Video+1',
+    src: 'https://picsum.photos/seed/frankie-demo/800/600',
+    thumbnail: 'https://picsum.photos/seed/frankie-demo/400/300',
     alt: {
-      ca: 'Vídeo de demostració de Frankie en acció',
-      es: 'Vídeo de demostración de Frankie en acción',
-      en: 'Frankie demo video in action'
+      ca: 'Frankie obeint una ordre de neteja',
+      es: 'Frankie obedeciendo una orden de limpieza',
+      en: 'Frankie obeying a cleaning command'
     }
   },
   {
     type: 'image',
-    url: 'https://via.placeholder.com/800x600/1a1a2e/00d4ff?text=Frankie+Robot',
+    src: 'https://picsum.photos/seed/frankie-robot/800/600',
     alt: {
       ca: 'Robot Frankie físic amb pantalla LED blava',
       es: 'Robot Frankie físico con pantalla LED azul',
@@ -31,77 +35,91 @@ const mediaItems: MediaItem[] = [
   },
   {
     type: 'image',
-    url: 'https://via.placeholder.com/800x600/1a1a2e/00d4ff?text=Blue+Eyes+Interface',
+    src: 'https://picsum.photos/seed/frankie-eyes/800/600',
     alt: {
-      ca: 'Interfície visual dels ulls blaus de Frankie',
-      es: 'Interfaz visual de los ojos azules de Frankie',
-      en: 'Visual interface of Frankie\'s blue eyes'
+      ca: 'Pantalla d\'ulls blaus de Frankie',
+      es: 'Pantalla de ojos azules de Frankie',
+      en: 'Frankie\'s blue eyes display'
     }
   },
   {
     type: 'image',
-    url: 'https://via.placeholder.com/800x600/1a1a2e/00d4ff?text=Web+Interface',
+    src: 'https://picsum.photos/seed/frankie-app/800/600',
     alt: {
-      ca: 'Captura de pantalla de la interfície web',
-      es: 'Captura de pantalla de la interfaz web',
-      en: 'Screenshot of the web interface'
+      ca: 'Interfície web de control de Frankie',
+      es: 'Interfaz web de control de Frankie',
+      en: 'Frankie web control interface'
     }
   },
   {
     type: 'video',
-    url: 'https://via.placeholder.com/800x450/1a1a2e/00d4ff?text=Cleaning+Video',
-    thumbnail: 'https://via.placeholder.com/400x225/1a1a2e/00d4ff?text=Video+2',
+    src: 'https://picsum.photos/seed/frankie-voice/800/600',
+    thumbnail: 'https://picsum.photos/seed/frankie-voice/400/300',
     alt: {
-      ca: 'Frankie netejant i tornant a la base',
-      es: 'Frankie limpiando y volviendo a la base',
-      en: 'Frankie cleaning and returning to base'
+      ca: 'Frankie responent amb veu a una pregunta',
+      es: 'Frankie respondiendo con voz a una pregunta',
+      en: 'Frankie responding with voice to a question'
     }
   },
   {
     type: 'image',
-    url: 'https://via.placeholder.com/800x600/1a1a2e/00d4ff?text=iOS+App',
+    src: 'https://picsum.photos/seed/frankie-cleaning/800/600',
     alt: {
-      ca: 'Interfície de l\'aplicació iOS',
-      es: 'Interfaz de la aplicación iOS',
-      en: 'iOS application interface'
+      ca: 'Frankie netejant el terra automàticament',
+      es: 'Frankie limpiando el suelo automáticamente',
+      en: 'Frankie automatically cleaning the floor'
     }
   },
   {
     type: 'video',
-    url: 'https://via.placeholder.com/800x450/1a1a2e/00d4ff?text=Voice+Interaction',
-    thumbnail: 'https://via.placeholder.com/400x225/1a1a2e/00d4ff?text=Video+3',
+    src: 'https://picsum.photos/seed/frankie-base/800/600',
+    thumbnail: 'https://picsum.photos/seed/frankie-base/400/300',
     alt: {
-      ca: 'Frankie responent a ordres de veu',
-      es: 'Frankie respondiendo a órdenes de voz',
-      en: 'Frankie responding to voice commands'
+      ca: 'Frankie tornant a la base de càrrega',
+      es: 'Frankie volviendo a la base de carga',
+      en: 'Frankie returning to charging base'
     }
   }
 ];
 
 export default function Gallery() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
-  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState<number>(-1);
 
-  const openLightbox = (item: MediaItem) => {
+  const openLightbox = (item: MediaItem, index: number) => {
     setSelectedMedia(item);
-    setIsLightboxOpen(true);
+    setSelectedIndex(index);
   };
 
   const closeLightbox = () => {
-    setIsLightboxOpen(false);
-    setTimeout(() => setSelectedMedia(null), 300);
+    setSelectedMedia(null);
+    setSelectedIndex(-1);
+  };
+
+  const navigateLightbox = (direction: 'prev' | 'next') => {
+    if (selectedIndex === -1) return;
+    
+    let newIndex = selectedIndex;
+    if (direction === 'prev') {
+      newIndex = selectedIndex > 0 ? selectedIndex - 1 : mediaItems.length - 1;
+    } else {
+      newIndex = selectedIndex < mediaItems.length - 1 ? selectedIndex + 1 : 0;
+    }
+    
+    setSelectedIndex(newIndex);
+    setSelectedMedia(mediaItems[newIndex]);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      closeLightbox();
-    }
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navigateLightbox('prev');
+    if (e.key === 'ArrowRight') navigateLightbox('next');
   };
 
   return (
     <section className="gallery" id="gallery">
-      <div className="gallery-container">
+      <div className="container">
         <h2 className="gallery-title">{t('gallery.title')}</h2>
         <p className="gallery-subtitle">{t('gallery.subtitle')}</p>
 
@@ -109,38 +127,44 @@ export default function Gallery() {
           {mediaItems.map((item, index) => (
             <div
               key={index}
-              className={`gallery-item ${item.type}`}
-              onClick={() => openLightbox(item)}
-              onKeyDown={(e) => e.key === 'Enter' && openLightbox(item)}
-              tabIndex={0}
+              className="gallery-item"
+              onClick={() => openLightbox(item, index)}
               role="button"
-              aria-label={item.alt[t('currentLang')]}
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  openLightbox(item, index);
+                }
+              }}
+              aria-label={item.alt[language]}
             >
-              {item.type === 'image' ? (
-                <img
-                  src={item.url}
-                  alt={item.alt[t('currentLang')]}
-                  loading="lazy"
-                  className="gallery-image"
-                />
-              ) : (
-                <div className="video-thumbnail">
+              {item.type === 'video' ? (
+                <div className="gallery-video-wrapper">
                   <img
-                    src={item.thumbnail}
-                    alt={item.alt[t('currentLang')]}
+                    src={item.thumbnail || item.src}
+                    alt={item.alt[language]}
                     loading="lazy"
-                    className="gallery-image"
+                    className="gallery-thumbnail"
                   />
-                  <div className="play-button">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
+                  <div className="gallery-play-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <circle cx="24" cy="24" r="24" fill="rgba(0, 123, 255, 0.8)" />
+                      <path d="M18 14L34 24L18 34V14Z" fill="white" />
                     </svg>
                   </div>
                 </div>
+              ) : (
+                <img
+                  src={item.src}
+                  alt={item.alt[language]}
+                  loading="lazy"
+                  className="gallery-image"
+                />
               )}
               <div className="gallery-overlay">
-                <span className="overlay-icon">
-                  {item.type === 'image' ? '🔍' : '▶️'}
+                <span className="gallery-type">
+                  {item.type === 'video' ? '▶ Video' : '🖼 Imatge'}
                 </span>
               </div>
             </div>
@@ -148,14 +172,15 @@ export default function Gallery() {
         </div>
       </div>
 
-      {isLightboxOpen && selectedMedia && (
+      {selectedMedia && (
         <div
-          className={`lightbox ${isLightboxOpen ? 'open' : ''}`}
+          className="lightbox"
           onClick={closeLightbox}
           onKeyDown={handleKeyDown}
           role="dialog"
           aria-modal="true"
           aria-label={t('gallery.lightbox')}
+          tabIndex={-1}
         >
           <button
             className="lightbox-close"
@@ -164,28 +189,47 @@ export default function Gallery() {
           >
             ✕
           </button>
-          <div
-            className="lightbox-content"
-            onClick={(e) => e.stopPropagation()}
+
+          <button
+            className="lightbox-nav lightbox-prev"
+            onClick={(e) => {
+              e.stopPropagation();
+              navigateLightbox('prev');
+            }}
+            aria-label={t('gallery.previous')}
           >
-            {selectedMedia.type === 'image' ? (
-              <img
-                src={selectedMedia.url}
-                alt={selectedMedia.alt[t('currentLang')]}
-                className="lightbox-image"
-              />
-            ) : (
+            ‹
+          </button>
+
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            {selectedMedia.type === 'video' ? (
               <video
-                src={selectedMedia.url}
+                src={selectedMedia.src}
                 controls
                 autoPlay
                 className="lightbox-video"
-                aria-label={selectedMedia.alt[t('currentLang')]}
-              >
-                {t('gallery.videoNotSupported')}
-              </video>
+                aria-label={selectedMedia.alt[language]}
+              />
+            ) : (
+              <img
+                src={selectedMedia.src}
+                alt={selectedMedia.alt[language]}
+                className="lightbox-image"
+              />
             )}
+            <p className="lightbox-caption">{selectedMedia.alt[language]}</p>
           </div>
+
+          <button
+            className="lightbox-nav lightbox-next"
+            onClick={(e) => {
+              e.stopPropagation();
+              navigateLightbox('next');
+            }}
+            aria-label={t('gallery.next')}
+          >
+            ›
+          </button>
         </div>
       )}
     </section>

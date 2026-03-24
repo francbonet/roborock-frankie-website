@@ -18,6 +18,7 @@ function App() {
       <WhatCanDo />
       <HowItWorks />
       <AILayer />
+      <Gallery />
    </LanguageProvider> 
   )
 }

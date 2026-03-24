@@ -30,9 +30,11 @@ export const translations = {
     },
     gallery: {
       title: "Galeria multimèdia",
-      subtitle: "Veure Frankie en acció: fotos i vídeos reals del robot",
-      lightbox: "Modal de galeria",
+      subtitle: "Descobreix Frankie en acció a través d'imatges i vídeos",
+      lightbox: "Visualitzador de contingut",
       close: "Tancar",
+      previous: "Anterior",
+      next: "Següent",
       videoNotSupported: "El teu navegador no suporta la reproducció de vídeo."
     },
     whatCanDo: {
@@ -136,9 +138,11 @@ export const translations = {
     },
     gallery: {
       title: "Galería multimedia",
-      subtitle: "Ver Frankie en acción: fotos y vídeos reales del robot",
-      lightbox: "Modal de galería",
+      subtitle: "Descubre Frankie en acción a través de imágenes y vídeos",
+      lightbox: "Visualizador de contenido",
       close: "Cerrar",
+      previous: "Anterior",
+      next: "Siguiente",
       videoNotSupported: "Tu navegador no soporta la reproducción de vídeo."
     },
     whatCanDo: {
@@ -242,9 +246,11 @@ export const translations = {
     },
     gallery: {
       title: "Media Gallery",
-      subtitle: "See Frankie in action: real photos and videos of the robot",
-      lightbox: "Gallery modal",
+      subtitle: "Discover Frankie in action through images and videos",
+      lightbox: "Content viewer",
       close: "Close",
+      previous: "Previous",
+      next: "Next",
       videoNotSupported: "Your browser does not support video playback."
     },
     whatCanDo: {
