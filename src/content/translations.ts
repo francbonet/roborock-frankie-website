@@ -6,7 +6,7 @@ interface Translations {
   projectSubtitle: string;
 }
 
-type TranslationsMap = Record<Language, Translations>;
+type TranslationsMap = Record<Language, any>;
 
 export const translations = {
   ca: {
@@ -107,7 +107,46 @@ export const translations = {
         'App iOS per a la interfície',
       ],
     },
+  gallery: {
+    title: 'Frankie en Acció',
+    subtitle: 'Veure Frankie en acció: comandes de veu, navegació autònoma i interacció intel·ligent',
+    lightbox: {
+      ariaLabel: 'Lightbox de mitjans',
+      close: 'Tancar',
+      previous: 'Anterior',
+      next: 'Següent',
+      videoNotSupported: 'El teu navegador no suporta la etiqueta de vídeo.',
+    },
+    media: {
+      video1: {
+        src: 'https://example.com/videos/frankie-demo.mp4',
+        thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+        alt: 'Frankie responent a comandes de veu',
+      },
+      image1: {
+        src: 'https://example.com/images/frankie-robot.jpg',
+        alt: 'Frankie el robot Roborock S5',
+      },
+      image2: {
+        src: 'https://example.com/images/frankie-interface.jpg',
+        alt: 'Interfície de pantalla blava de Frankie',
+      },
+      image3: {
+        src: 'https://example.com/images/frankie-app.jpg',
+        alt: 'Aplicació web i iOS de Frankie',
+      },
+      video2: {
+        src: 'https://example.com/videos/frankie-cleaning.mp4',
+        thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+        alt: 'Frankie netejant i tornant a la base',
+      },
+      image4: {
+        src: 'https://example.com/images/frankie-voice.jpg',
+        alt: 'Interacció de veu de Frankie amb ChatGPT',
+      },
+    },
   },
+},
   es: {
     languageSelector: {
       label: 'Idioma',
@@ -206,7 +245,46 @@ export const translations = {
         'App iOS para la interfaz',
       ],
     },
+  gallery: {
+    title: 'Frankie en Acción',
+    subtitle: 'Ver a Frankie en acción: comandos de voz, navegación autónoma e interacción inteligente',
+    lightbox: {
+      ariaLabel: 'Lightbox de medios',
+      close: 'Cerrar',
+      previous: 'Anterior',
+      next: 'Siguiente',
+      videoNotSupported: 'Tu navegador no soporta la etiqueta de vídeo.',
+    },
+    media: {
+      video1: {
+        src: 'https://example.com/videos/frankie-demo.mp4',
+        thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+        alt: 'Frankie respondiendo a comandos de voz',
+      },
+      image1: {
+        src: 'https://example.com/images/frankie-robot.jpg',
+        alt: 'Frankie el robot Roborock S5',
+      },
+      image2: {
+        src: 'https://example.com/images/frankie-interface.jpg',
+        alt: 'Interfaz de pantalla azul de Frankie',
+      },
+      image3: {
+        src: 'https://example.com/images/frankie-app.jpg',
+        alt: 'Aplicación web e iOS de Frankie',
+      },
+      video2: {
+        src: 'https://example.com/videos/frankie-cleaning.mp4',
+        thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+        alt: 'Frankie limpiando y regresando a la base',
+      },
+      image4: {
+        src: 'https://example.com/images/frankie-voice.jpg',
+        alt: 'Interacción de voz de Frankie con ChatGPT',
+      },
+    },
   },
+},
   en: {
     languageSelector: {
       label: 'Language',
@@ -305,9 +383,48 @@ export const translations = {
         'iOS app for the interface',
       ],
     },
-  }
+    gallery: {
+      title: 'Frankie in Action',
+      subtitle: 'See Frankie in action: voice commands, autonomous navigation, and intelligent interaction',
+      lightbox: {
+        ariaLabel: 'Media lightbox',
+        close: 'Close',
+        previous: 'Previous',
+        next: 'Next',
+        videoNotSupported: 'Your browser does not support the video tag.',
+      },
+      media: {
+        video1: {
+          src: 'https://example.com/videos/frankie-demo.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          alt: 'Frankie responding to voice commands',
+        },
+        image1: {
+          src: 'https://example.com/images/frankie-robot.jpg',
+          alt: 'Frankie the Roborock S5 robot',
+        },
+        image2: {
+          src: 'https://example.com/images/frankie-interface.jpg',
+          alt: 'Frankie blue screen interface',
+        },
+        image3: {
+          src: 'https://example.com/images/frankie-app.jpg',
+          alt: 'Frankie web and iOS application',
+        },
+        video2: {
+          src: 'https://example.com/videos/frankie-cleaning.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          alt: 'Frankie cleaning and returning to base',
+        },
+        image4: {
+          src: 'https://example.com/images/frankie-voice.jpg',
+          alt: 'Frankie voice interaction with ChatGPT',
+        },
+      },
+    },
+}
 };
 
-export const getTranslations = (language: Language): Translations => {
+export const getTranslations = (language: Language): any => {
   return translations[language];
 };
