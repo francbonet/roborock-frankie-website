@@ -64,6 +64,29 @@ export const translations = {
         }
       ]
     },
+    howItWorks: {
+      title: 'Com està construït?',
+      subtitle: 'Frankie combina software web, control del robot i una capa d\'intel·ligència artificial.',
+      flowTitle: 'Arquitectura general',
+      flow: [
+        'L\'usuari parla o interactua amb la interfície',
+        'El sistema envia la petició al backend',
+        'El model d\'IA interpreta què s\'ha de fer',
+        'Si cal, selecciona una eina o acció',
+        'El backend tradueix això a comandes reals del Roborock',
+        'Frankie respon amb veu, estat o animació',
+      ],
+      stackTitle: 'Stack tecnològic',
+      stack: [
+        'Node.js',
+        'Express',
+        'JavaScript',
+        'mirobo / python-miio',
+        'OpenAI / ChatGPT-4-mini',
+        'Frontend visual amb animacions',
+        'App iOS per a la interfície',
+      ],
+    },
   },
   es: {
     languageSelector: {
@@ -120,6 +143,29 @@ export const translations = {
         }
       ]
     },
+    howItWorks: {
+      title: '¿Cómo está construido?',
+      subtitle: 'Frankie combina software web, control del robot y una capa de inteligencia artificial.',
+      flowTitle: 'Arquitectura general',
+      flow: [
+        'El usuario habla o interactúa con la interfaz',
+        'El sistema envía la petición al backend',
+        'El modelo de IA interpreta qué se debe hacer',
+        'Si es necesario, selecciona una herramienta o acción',
+        'El backend traduce esto a comandos reales del Roborock',
+        'Frankie responde con voz, estado o animación',
+      ],
+      stackTitle: 'Stack tecnológico',
+      stack: [
+        'Node.js',
+        'Express',
+        'JavaScript',
+        'mirobo / python-miio',
+        'OpenAI / ChatGPT-4-mini',
+        'Frontend visual con animaciones',
+        'App iOS para la interfaz',
+      ],
+    },
   },
   en: {
     languageSelector: {
@@ -175,6 +221,29 @@ export const translations = {
           description: "Battery, status, base, fan, cleaned area and much more."
         }
       ]
+    },
+    howItWorks: {
+      title: 'How is it built?',
+      subtitle: 'Frankie combines web software, robot control and an artificial intelligence layer.',
+      flowTitle: 'General architecture',
+      flow: [
+        'The user speaks or interacts with the interface',
+        'The system sends the request to the backend',
+        'The AI model interprets what needs to be done',
+        'If necessary, selects a tool or action',
+        'The backend translates this into real Roborock commands',
+        'Frankie responds with voice, status or animation',
+      ],
+      stackTitle: 'Technology stack',
+      stack: [
+        'Node.js',
+        'Express',
+        'JavaScript',
+        'mirobo / python-miio',
+        'OpenAI / ChatGPT-4-mini',
+        'Visual frontend with animations',
+        'iOS app for the interface',
+      ],
     },
   }
 };
