@@ -1,0 +1,271 @@
+/**
+ * 🧪 MOLECULES
+ * Agrupacions d'atoms que formen components funcionals
+ */
+
+/* === CARDS === */
+.molecule-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.molecule-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.molecule-card__title {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.molecule-card__content {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.molecule-card--image {
+  overflow: hidden;
+  padding: 0;
+}
+
+.molecule-card--image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.molecule-card--image .molecule-card__body {
+  padding: var(--space-lg);
+}
+
+/* === FORM GROUPS === */
+.molecule-form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.molecule-form-group__label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.molecule-form-group__input {
+  width: 100%;
+}
+
+.molecule-form-group__error {
+  color: #ff4444;
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-xs);
+}
+
+.molecule-form-group__help {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-xs);
+}
+
+/* === NAVIGATION ITEMS === */
+.molecule-nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.molecule-nav-item:hover {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+.molecule-nav-item--active {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.molecule-nav-item__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.molecule-nav-item__text {
+  font-size: var(--font-size-base);
+}
+
+/* === MEDIA OBJECTS === */
+.molecule-media {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.molecule-media__image {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.molecule-media__content {
+  flex: 1;
+}
+
+.molecule-media__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.molecule-media__description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* === SEARCH BOX === */
+.molecule-search {
+  display: flex;
+  gap: var(--space-sm);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xs);
+  transition: all var(--transition-base);
+}
+
+.molecule-search:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.molecule-search__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  padding: var(--space-sm);
+  outline: none;
+}
+
+.molecule-search__button {
+  padding: var(--space-sm) var(--space-md);
+}
+
+/* === BREADCRUMBS === */
+.molecule-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.molecule-breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.molecule-breadcrumb__item--active {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.molecule-breadcrumb__separator {
+  color: var(--color-border);
+}
+
+/* === PAGINATION === */
+.molecule-pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.molecule-pagination__button {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.molecule-pagination__button:hover {
+  background-color: var(--color-border);
+}
+
+.molecule-pagination__button--active {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-primary);
+}
+
+.molecule-pagination__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* === ALERTS === */
+.molecule-alert {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.molecule-alert--success {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-left-color: #22c55e;
+}
+
+.molecule-alert--warning {
+  background-color: rgba(251, 191, 36, 0.1);
+  border-left-color: #fbbf24;
+}
+
+.molecule-alert--error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-left-color: #ef4444;
+}
+
+.molecule-alert--info {
+  background-color: rgba(0, 212, 255, 0.1);
+  border-left-color: var(--color-primary);
+}
+
+.molecule-alert__icon {
+  flex-shrink: 0;
+}
+
+.molecule-alert__content {
+  flex: 1;
+}
+
+.molecule-alert__title {
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.molecule-alert__message {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}

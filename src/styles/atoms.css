@@ -1,0 +1,240 @@
+/**
+ * ⚛️ ATOMS
+ * Elements bàsics individuals que no es poden dividir més
+ */
+
+/* === BUTTONS === */
+.atom-button {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.atom-button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.atom-button--primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.atom-button--secondary {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.atom-button--secondary:hover {
+  background-color: var(--color-border);
+  border-color: var(--color-primary);
+}
+
+.atom-button--ghost {
+  background-color: transparent;
+  color: var(--color-text-primary);
+}
+
+.atom-button--ghost:hover {
+  background-color: var(--color-surface);
+}
+
+.atom-button--icon {
+  padding: var(--space-sm);
+  border-radius: var(--radius-full);
+  aspect-ratio: 1;
+}
+
+/* === INPUTS === */
+.atom-input {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  transition: all var(--transition-base);
+  width: 100%;
+}
+
+.atom-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.atom-input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.atom-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* === LABELS === */
+.atom-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.atom-badge {
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  display: inline-block;
+}
+
+.atom-tag {
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  display: inline-block;
+}
+
+/* === TYPOGRAPHY === */
+.atom-h1 {
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+.atom-h2 {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+.atom-h3 {
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+.atom-h4 {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.atom-h5 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.atom-h6 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.atom-p {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.atom-text-small {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* === ICONS === */
+.atom-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atom-icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.atom-icon--md {
+  width: 24px;
+  height: 24px;
+}
+
+.atom-icon--lg {
+  width: 32px;
+  height: 32px;
+}
+
+.atom-icon--xl {
+  width: 48px;
+  height: 48px;
+}
+
+/* === IMAGES === */
+.atom-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.atom-image--rounded {
+  border-radius: var(--radius-lg);
+}
+
+.atom-image--circle {
+  border-radius: var(--radius-full);
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* === LINKS === */
+.atom-link {
+  color: var(--color-primary);
+  transition: color var(--transition-base);
+  cursor: pointer;
+}
+
+.atom-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.atom-link:active {
+  opacity: 0.8;
+}
+
+/* === DIVIDERS === */
+.atom-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-md) 0;
+}
+
+.atom-divider--vertical {
+  border-top: none;
+  border-left: 1px solid var(--color-border);
+  height: 100%;
+  margin: 0 var(--space-md);
+  display: inline-block;
+}

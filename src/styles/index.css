@@ -1,0 +1,19 @@
+/**
+ * 🎨 Sistema de Tema Global - Frankie
+ * Import central de tots els estils
+ */
+
+/* Reset i base */
+@import './reset.css';
+
+/* Tema global (variables CSS) */
+@import './theme.css';
+
+/* Atomic Design levels */
+@import './atoms.css';
+@import './molecules.css';
+@import './organisms.css';
+@import './templates.css';
+
+/* Classes utilitàries */
+@import './utilities.css';
