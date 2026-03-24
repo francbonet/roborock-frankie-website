@@ -461,14 +461,7 @@ export const translations = {
       ],
       message: "It's a mix of: hardware, software, UX, AI and plenty of trial-and-error.",
     },
-  },
-  challenges: {
-    title: string;
-    statement: string;
-    subtitle: string;
-    items: Array<{ icon: string; text: string }>;
-    message: string;
-  };
+  }
 };
 
 export const getTranslations = (language: Language): any => {
