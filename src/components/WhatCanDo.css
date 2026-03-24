@@ -41,7 +41,7 @@
   font-size: 1.125rem;
   line-height: 1.8;
   text-align: center;
-  color: #a0aec0;
+  color: var(--color-text-secondary);
   max-width: 800px;
   margin: 0 auto 4rem;
   white-space: pre-line;
@@ -109,7 +109,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: var(--color-text-primary);
   position: relative;
   z-index: 1;
 }
@@ -117,7 +117,7 @@
 .what-can-do__card-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #a0aec0;
+  color: var(--color-text-secondary);
   position: relative;
   z-index: 1;
 }

@@ -51,7 +51,7 @@
 .final-cta-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.2;
   background: linear-gradient(135deg, #4a90e2 0%, #63b3ed 100%);
@@ -63,7 +63,7 @@
 .final-cta-description {
   font-size: 1.25rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
   max-width: 800px;
   margin-left: auto;
@@ -73,7 +73,7 @@
 .final-cta-message {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
   margin-bottom: 3rem;
   max-width: 700px;
   margin-left: auto;
@@ -123,7 +123,7 @@
 
 .cta-button-primary {
   background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
-  color: #fff;
+  color: var(--color-text-primary);
   box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
 }
 
@@ -134,21 +134,21 @@
 
 .cta-button-secondary {
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--color-text-primary);
   border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
 }
 
 .cta-button-secondary:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: var(--color-primary);
   transform: translateY(-2px);
 }
 
 .cta-button-tertiary {
   background: transparent;
-  color: #4a90e2;
-  border: 2px solid #4a90e2;
+  color: var(--color-text-accent);
+  border: 2px solid var(--color-primary);
 }
 
 .cta-button-tertiary:hover {
@@ -165,7 +165,7 @@
   .final-cta-title {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
