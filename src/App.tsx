@@ -1,30 +1,14 @@
-import React from 'react';
-import { LanguageProvider } from './context/LanguageContext';
-import { useLanguage } from './hooks/useLanguage';
-import { getTranslations } from './content/translations';
-import LanguageSelector from './components/LanguageSelector';
-import './App.css';
+import './App.css'
+import LanguageSelector from './components/LanguageSelector'
+import Hero from './components/Hero'
 
-const AppContent: React.FC = () => {
-  const { language } = useLanguage();
-  const t = getTranslations(language);
-
+function App() {
   return (
-    <div className="App">
+    <>
       <LanguageSelector />
-      <h1>{t.greeting}</h1>
-      <h2>{t.projectTitle}</h2>
-      <p className="subtitle">{t.projectSubtitle}</p>
-    </div>
-  );
-};
+      <Hero />
+    </>
+  )
+}
 
-const App: React.FC = () => {
-  return (
-    <LanguageProvider>
-      <AppContent />
-    </LanguageProvider>
-  );
-};
-
-export default App;
+export default App
