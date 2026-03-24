@@ -146,7 +146,20 @@ export const translations = {
       },
     },
   },
-},
+    challenges: {
+      title: 'El més difícil',
+      statement: 'Aquest projecte no va de "connectar una API i ja està".',
+      subtitle: 'Els reptes reals han estat:',
+      items: [
+        { icon: '🔧', text: 'entendre com parlar amb el Roborock' },
+        { icon: '🎯', text: 'convertir ordres naturals en accions segures' },
+        { icon: '⚙️', text: 'gestionar estat, cues i temporitzadors' },
+        { icon: '✨', text: 'donar una experiència visual coherent' },
+        { icon: '🎨', text: 'fer que tot plegat sembli un sol producte' },
+      ],
+      message: "És una barreja de: hardware, software, UX, IA i bastant prova-error.",
+    },
+  },
   es: {
     languageSelector: {
       label: 'Idioma',
@@ -284,7 +297,20 @@ export const translations = {
       },
     },
   },
-},
+    challenges: {
+      title: 'Lo más difícil',
+      statement: 'Este proyecto no va de "conectar una API y listo".',
+      subtitle: 'Los retos reales han sido:',
+      items: [
+        { icon: '🔧', text: 'entender cómo hablar con el Roborock' },
+        { icon: '🎯', text: 'convertir órdenes naturales en acciones seguras' },
+        { icon: '⚙️', text: 'gestionar estado, colas y temporizadores' },
+        { icon: '✨', text: 'dar una experiencia visual coherente' },
+        { icon: '🎨', text: 'hacer que todo parezca un solo producto' },
+      ],
+      message: "Es una mezcla de: hardware, software, UX, IA y bastante prueba-error.",
+    },
+  },
   en: {
     languageSelector: {
       label: 'Language',
@@ -422,7 +448,27 @@ export const translations = {
         },
       },
     },
-}
+    challenges: {
+      title: 'The hardest part',
+      statement: 'This project isn\'t about "connecting an API and that\'s it".',
+      subtitle: 'The real challenges were:',
+      items: [
+        { icon: '🔧', text: 'understanding how to talk to the Roborock' },
+        { icon: '🎯', text: 'converting natural commands into safe actions' },
+        { icon: '⚙️', text: 'managing state, queues and timers' },
+        { icon: '✨', text: 'providing a coherent visual experience' },
+        { icon: '🎨', text: 'making everything look like a single product' },
+      ],
+      message: "It's a mix of: hardware, software, UX, AI and plenty of trial-and-error.",
+    },
+  },
+  challenges: {
+    title: string;
+    statement: string;
+    subtitle: string;
+    items: Array<{ icon: string; text: string }>;
+    message: string;
+  };
 };
 
 export const getTranslations = (language: Language): any => {

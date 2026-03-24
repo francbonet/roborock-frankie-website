@@ -6,6 +6,7 @@ import WhatCanDo from './components/WhatCanDo'
 import HowItWorks from './components/HowItWorks'
 import { AILayer } from './components/AILayer'
 import { Gallery } from './components/Gallery'
+import { ChallengesLearnings } from './components/ChallengesLearnings'
 import { LanguageProvider } from './context/LanguageContext'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <AboutFrankie />
       <WhatCanDo />
       <Gallery />
+      <ChallengesLearnings />
       <HowItWorks />
       <AILayer />
    </LanguageProvider> 
