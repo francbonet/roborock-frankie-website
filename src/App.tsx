@@ -1,7 +1,7 @@
 import React from 'react';
 import LanguageSelector from './components/LanguageSelector';
 import Hero from './components/Hero';
-import { LanguageProvider } from './hooks/useLanguage';
+import { LanguageProvider } from './contexts/LanguageContext';
 import './App.css';
 
 function App() {
