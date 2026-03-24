@@ -1,0 +1,163 @@
+.ai-layer {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+}
+
+.ai-layer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ai-layer__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ai-layer__content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.ai-layer__intro {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ai-layer__explanation {
+  margin-bottom: 2rem;
+}
+
+.ai-layer__explanation p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.ai-layer__transition {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.ai-layer__commands {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ai-layer__commands-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ai-layer__commands-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.ai-layer__command {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: default;
+}
+
+.ai-layer__command:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ai-layer__command-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.ai-layer__command-text {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.ai-layer__highlight {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ai-layer__key-message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ai-layer__conclusion {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .ai-layer {
+    padding: 3rem 1rem;
+  }
+
+  .ai-layer__title {
+    font-size: 2rem;
+  }
+
+  .ai-layer__content {
+    padding: 1.5rem;
+  }
+
+  .ai-layer__intro {
+    font-size: 1.1rem;
+  }
+
+  .ai-layer__explanation p,
+  .ai-layer__transition {
+    font-size: 1rem;
+  }
+
+  .ai-layer__commands {
+    padding: 1.5rem;
+  }
+
+  .ai-layer__commands-title {
+    font-size: 1.25rem;
+  }
+
+  .ai-layer__commands-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-layer__key-message {
+    font-size: 1.1rem;
+  }
+
+  .ai-layer__conclusion {
+    font-size: 1rem;
+  }
+}

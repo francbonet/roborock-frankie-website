@@ -64,6 +64,26 @@ export const translations = {
         }
       ]
     },
+    aiLayer: {
+      title: 'La capa d\'intel·ligència artificial',
+      intro: 'La IA és el cervell que hi ha al damunt del robot.',
+      notDirectControl: 'No controla directament els motors:',
+      interpretation:
+        'interpreta el llenguatge, entén el context i decideix quina eina s\'ha de fer servir.',
+      transition:
+        'Això permet passar de comandes rígides a una interacció molt més natural:',
+      commandsTitle: 'Exemples de comandes naturals',
+      commands: [
+        'ves a la cuina',
+        'para',
+        'torna a la base',
+        'què estàs fent?',
+        'neteja el passadís després',
+      ],
+      keyMessage: 'Aquest és el punt interessant del projecte:',
+      conclusion:
+        'convertir un dispositiu tancat en una plataforma programable i conversacional.',
+    },
     howItWorks: {
       title: 'Com està construït?',
       subtitle: 'Frankie combina software web, control del robot i una capa d\'intel·ligència artificial.',
@@ -143,6 +163,26 @@ export const translations = {
         }
       ]
     },
+    aiLayer: {
+      title: 'La capa de inteligencia artificial',
+      intro: 'La IA es el cerebro que está encima del robot.',
+      notDirectControl: 'No controla directamente los motores:',
+      interpretation:
+        'interpreta el lenguaje, entiende el contexto y decide qué herramienta debe utilizarse.',
+      transition:
+        'Esto permite pasar de comandos rígidos a una interacción mucho más natural:',
+      commandsTitle: 'Ejemplos de comandos naturales',
+      commands: [
+        've a la cocina',
+        'para',
+        'vuelve a la base',
+        '¿qué estás haciendo?',
+        'limpia el pasillo después',
+      ],
+      keyMessage: 'Este es el punto interesante del proyecto:',
+      conclusion:
+        'convertir un dispositivo cerrado en una plataforma programable y conversacional.',
+    },
     howItWorks: {
       title: '¿Cómo está construido?',
       subtitle: 'Frankie combina software web, control del robot y una capa de inteligencia artificial.',
@@ -221,6 +261,26 @@ export const translations = {
           description: "Battery, status, base, fan, cleaned area and much more."
         }
       ]
+    },
+    aiLayer: {
+      title: 'The artificial intelligence layer',
+      intro: 'The AI is the brain on top of the robot.',
+      notDirectControl: 'It does not directly control the motors:',
+      interpretation:
+        'it interprets language, understands context and decides which tool should be used.',
+      transition:
+        'This allows moving from rigid commands to a much more natural interaction:',
+      commandsTitle: 'Natural command examples',
+      commands: [
+        'go to the kitchen',
+        'stop',
+        'return to base',
+        'what are you doing?',
+        'clean the hallway next',
+      ],
+      keyMessage: 'This is the interesting point of the project:',
+      conclusion:
+        'turning a closed device into a programmable and conversational platform.',
     },
     howItWorks: {
       title: 'How is it built?',

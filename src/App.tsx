@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import { AboutFrankie } from './components/AboutFrankie'
 import WhatCanDo from './components/WhatCanDo'
 import HowItWorks from './components/HowItWorks'
+import { AILayer } from './components/AILayer'
 import { LanguageProvider } from './context/LanguageContext'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AboutFrankie />
       <WhatCanDo />
       <HowItWorks />
+      <AILayer />
    </LanguageProvider> 
   )
 }
