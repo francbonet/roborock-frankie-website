@@ -1,7 +1,7 @@
 .how-it-works {
   padding: 80px 20px;
   background: var(--background-primary);
-  color: white;
+  color: var(--color-text-primary);
 }
 
 .how-it-works .container {
@@ -58,8 +58,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: white;
-  color: #667eea;
+  background: var(--color-primary);
+  color: var(--color-background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@
 
 .step-arrow {
   font-size: 2rem;
-  color: white;
+  color: var(--color-text-primary);
   margin: 0.5rem 0;
   animation: bounce 2s infinite;
 }

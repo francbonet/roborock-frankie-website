@@ -15,9 +15,9 @@
 
 .lang-btn {
   padding: 0.5rem 1rem;
-  border: 2px solid #646cff;
+  border: 2px solid var(--color-border);
   background-color: transparent;
-  color: inherit;
+  color: var(--color-text-primary);
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -25,16 +25,12 @@
 }
 
 .lang-btn:hover {
-  background-color: rgba(100, 108, 255, 0.1);
+  background-color: var(--color-surface);
+  border-color: var(--color-primary);
 }
 
 .lang-btn.active {
-  background-color: #646cff;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-background);
 }
 
-@media (prefers-color-scheme: light) {
-  .lang-btn.active {
-    color: white;
-  }
-}
