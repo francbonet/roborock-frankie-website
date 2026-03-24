@@ -1,72 +1,16 @@
-:root {
-  /* Paleta de colors Frankie */
-  --color-primary: #00D4FF;
-  --color-bg: #0B0F14;
-  --color-surface: #161D27;
-  --color-text: #E6EDF3;
-  --color-text-secondary: #9FB0C3;
-  --color-hover: #4DE6FF;
-  --color-border: #1C2531;
+/**
+ * 🎨 Import del Sistema de Tema Global
+ */
+@import './styles/index.css';
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: dark;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: var(--color-primary);
-  text-decoration: inherit;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: var(--color-hover);
-}
-
+/**
+ * Estils base per l'aplicació
+ */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
-  background-color: var(--color-bg);
-  color: var(--color-text);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+  min-height: 100vh;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid var(--color-border);
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--color-surface);
-  color: var(--color-text);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-button:hover {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-}
-button:focus,
-button:focus-visible {
-  outline: 2px solid var(--color-hover);
-  outline-offset: 2px;
-}
-
