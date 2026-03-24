@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 import './Gallery.css';
+import { getTranslations } from '../content/translations';
 
 interface MediaItem {
   type: 'image' | 'video';
@@ -10,17 +11,18 @@ interface MediaItem {
 }
 
 export function Gallery() {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const t = getTranslations(language);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const mediaItems: MediaItem[] = [
-    { type: 'video', src: t('gallery.media.video1.src'), thumbnail: t('gallery.media.video1.thumbnail'), alt: t('gallery.media.video1.alt') },
-    { type: 'image', src: t('gallery.media.image1.src'), alt: t('gallery.media.image1.alt') },
-    { type: 'image', src: t('gallery.media.image2.src'), alt: t('gallery.media.image2.alt') },
-    { type: 'image', src: t('gallery.media.image3.src'), alt: t('gallery.media.image3.alt') },
-    { type: 'video', src: t('gallery.media.video2.src'), thumbnail: t('gallery.media.video2.thumbnail'), alt: t('gallery.media.video2.alt') },
-    { type: 'image', src: t('gallery.media.image4.src'), alt: t('gallery.media.image4.alt') },
+    { type: 'video', src: t.gallery.media.video1.src, thumbnail: t.gallery.media.video1.thumbnail, alt: t.gallery.media.video1.alt },
+    { type: 'image', src: t.gallery.media.image1.src, alt: t.gallery.media.image1.alt },
+    { type: 'image', src: t.gallery.media.image2.src, alt: t.gallery.media.image2.alt},
+    { type: 'image', src: t.gallery.media.image3.src, alt: t.gallery.media.image3.alt },
+    { type: 'video', src: t.gallery.media.video2.src, thumbnail: t.gallery.media.video2.thumbnail, alt: t.gallery.media.video2.alt },
+    { type: 'image', src: t.gallery.media.image4.src, alt: t.gallery.media.image4.alt },
   ];
 
   const openLightbox = (index: number) => {
@@ -49,8 +51,8 @@ export function Gallery() {
   return (
     <section className="gallery" id="gallery">
       <div className="container">
-        <h2 className="section-title">{t('gallery.title')}</h2>
-        <p className="section-subtitle">{t('gallery.subtitle')}</p>
+        <h2 className="section-title">{t.gallery.title}</h2>
+        <p className="section-subtitle">{t.gallery.subtitle}</p>
 
         <div className="gallery-grid">
           {mediaItems.map((item, index) => (
@@ -91,27 +93,27 @@ export function Gallery() {
           onKeyDown={handleKeyDown}
           role="dialog"
           aria-modal="true"
-          aria-label={t('gallery.lightbox.ariaLabel')}
+          aria-label={t.gallery.lightbox.ariaLabel}
           tabIndex={0}
         >
           <button
             className="lightbox-close"
             onClick={closeLightbox}
-            aria-label={t('gallery.lightbox.close')}
+            aria-label={t.gallery.lightbox.close}
           >
             ✕
           </button>
           <button
             className="lightbox-nav lightbox-prev"
             onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
-            aria-label={t('gallery.lightbox.previous')}
+            aria-label={t.gallery.lightbox.previous}
           >
             ‹
           </button>
           <button
             className="lightbox-nav lightbox-next"
             onClick={(e) => { e.stopPropagation(); goToNext(); }}
-            aria-label={t('gallery.lightbox.next')}
+            aria-label={t.gallery.lightbox.next}
           >
             ›
           </button>
@@ -121,7 +123,7 @@ export function Gallery() {
             ) : (
               <video controls autoPlay>
                 <source src={mediaItems[currentIndex].src} type="video/mp4" />
-                {t('gallery.lightbox.videoNotSupported')}
+                {t.gallery.lightbox.videoNotSupported}
               </video>
             )}
             <p className="lightbox-caption">{mediaItems[currentIndex].alt}</p>

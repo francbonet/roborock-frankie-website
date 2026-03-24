@@ -6,7 +6,7 @@ interface Translations {
   projectSubtitle: string;
 }
 
-type TranslationsMap = Record<Language, Translations>;
+type TranslationsMap = Record<Language, any>;
 
 export const translations = {
   ca: {
@@ -383,48 +383,48 @@ export const translations = {
         'iOS app for the interface',
       ],
     },
-  gallery: {
-    title: 'Frankie in Action',
-    subtitle: 'See Frankie in action: voice commands, autonomous navigation, and intelligent interaction',
-    lightbox: {
-      ariaLabel: 'Media lightbox',
-      close: 'Close',
-      previous: 'Previous',
-      next: 'Next',
-      videoNotSupported: 'Your browser does not support the video tag.',
+    gallery: {
+      title: 'Frankie in Action',
+      subtitle: 'See Frankie in action: voice commands, autonomous navigation, and intelligent interaction',
+      lightbox: {
+        ariaLabel: 'Media lightbox',
+        close: 'Close',
+        previous: 'Previous',
+        next: 'Next',
+        videoNotSupported: 'Your browser does not support the video tag.',
+      },
+      media: {
+        video1: {
+          src: 'https://example.com/videos/frankie-demo.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          alt: 'Frankie responding to voice commands',
+        },
+        image1: {
+          src: 'https://example.com/images/frankie-robot.jpg',
+          alt: 'Frankie the Roborock S5 robot',
+        },
+        image2: {
+          src: 'https://example.com/images/frankie-interface.jpg',
+          alt: 'Frankie blue screen interface',
+        },
+        image3: {
+          src: 'https://example.com/images/frankie-app.jpg',
+          alt: 'Frankie web and iOS application',
+        },
+        video2: {
+          src: 'https://example.com/videos/frankie-cleaning.mp4',
+          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          alt: 'Frankie cleaning and returning to base',
+        },
+        image4: {
+          src: 'https://example.com/images/frankie-voice.jpg',
+          alt: 'Frankie voice interaction with ChatGPT',
+        },
+      },
     },
-    media: {
-      video1: {
-        src: 'https://example.com/videos/frankie-demo.mp4',
-        thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
-        alt: 'Frankie responding to voice commands',
-      },
-      image1: {
-        src: 'https://example.com/images/frankie-robot.jpg',
-        alt: 'Frankie the Roborock S5 robot',
-      },
-      image2: {
-        src: 'https://example.com/images/frankie-interface.jpg',
-        alt: 'Frankie blue screen interface',
-      },
-      image3: {
-        src: 'https://example.com/images/frankie-app.jpg',
-        alt: 'Frankie web and iOS application',
-      },
-      video2: {
-        src: 'https://example.com/videos/frankie-cleaning.mp4',
-        thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
-        alt: 'Frankie cleaning and returning to base',
-      },
-      image4: {
-        src: 'https://example.com/images/frankie-voice.jpg',
-        alt: 'Frankie voice interaction with ChatGPT',
-      },
-    },
-  },
 }
 };
 
-export const getTranslations = (language: Language): Translations => {
+export const getTranslations = (language: Language): any => {
   return translations[language];
 };
