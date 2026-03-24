@@ -13,17 +13,19 @@ const LanguageSelector: React.FC = () => {
   ];
 
   return (
-    <div className="language-selector">
+    <nav className="language-selector" role="navigation" aria-label="Language selector">
       {languages.map((lang) => (
         <button
           key={lang.code}
           className={`lang-btn ${language === lang.code ? 'active' : ''}`}
           onClick={() => setLanguage(lang.code)}
+          aria-label={`Switch to ${lang.label}`}
+          aria-current={language === lang.code ? 'true' : 'false'}
         >
           {lang.label}
         </button>
       ))}
-    </div>
+    </nav>
   );
 };
 
