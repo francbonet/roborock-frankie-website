@@ -155,7 +155,7 @@ export const translations = {
           alt: 'Frankie netejant i tornant a la base',
         },
         image4: {
-          src: 'assets/image3.png',
+          src: 'assets/image6.png',
           alt: 'Interacció de veu de Frankie amb ChatGPT',
         },
       },
@@ -330,7 +330,7 @@ export const translations = {
           alt: 'Frankie limpiando y regresando a la base',
         },
         image4: {
-          src: 'assets/image3.png',
+          src: 'assets/image6.png',
           alt: 'Interacción de voz de Frankie con ChatGPT',
         },
       },
@@ -505,7 +505,7 @@ export const translations = {
           alt: 'Frankie cleaning and returning to base',
         },
         image4: {
-          src: 'assets/image3.png',
+          src: 'assets/image6.png',
           alt: 'Frankie voice interaction with ChatGPT',
         },
       },
