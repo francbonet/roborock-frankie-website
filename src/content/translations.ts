@@ -133,8 +133,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+          src: 'https://www.youtube.com/watch?v=m-0wjf8cs1Q',
+          thumbnail: 'https://img.youtube.com/vi/m-0wjf8cs1Q/maxresdefault.jpg',
           alt: 'Frankie responent a comandes de veu',
         },
         image1: {
@@ -304,8 +304,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+          src: 'https://www.youtube.com/watch?v=m-0wjf8cs1Q',
+          thumbnail: 'https://img.youtube.com/vi/m-0wjf8cs1Q/maxresdefault.jpg',
           alt: 'Frankie respondiendo a comandos de voz',
         },
         image1: {
@@ -475,8 +475,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+          src: 'https://www.youtube.com/watch?v=m-0wjf8cs1Q',
+          thumbnail: 'https://img.youtube.com/vi/m-0wjf8cs1Q/maxresdefault.jpg',
           alt: 'Frankie responding to voice commands',
         },
         image1: {
