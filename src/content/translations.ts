@@ -133,8 +133,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://example.com/videos/frankie-demo.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie responent a comandes de veu',
         },
         image1: {
@@ -149,11 +149,7 @@ export const translations = {
           src: 'assets/image2.png',
           alt: 'Aplicació web i iOS de Frankie',
         },
-        video2: {
-          src: 'https://example.com/videos/frankie-cleaning.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
-          alt: 'Frankie netejant i tornant a la base',
-        },
+
         image4: {
           src: 'assets/image6.png',
           alt: 'Interacció de veu de Frankie amb ChatGPT',
@@ -308,8 +304,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://example.com/videos/frankie-demo.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie respondiendo a comandos de voz',
         },
         image1: {
@@ -324,11 +320,7 @@ export const translations = {
           src: 'assets/image2.png',
           alt: 'Aplicación web e iOS de Frankie',
         },
-        video2: {
-          src: 'https://example.com/videos/frankie-cleaning.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
-          alt: 'Frankie limpiando y regresando a la base',
-        },
+
         image4: {
           src: 'assets/image6.png',
           alt: 'Interacción de voz de Frankie con ChatGPT',
@@ -483,8 +475,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://example.com/videos/frankie-demo.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie responding to voice commands',
         },
         image1: {
@@ -499,11 +491,7 @@ export const translations = {
           src: 'assets/image2.png',
           alt: 'Frankie web and iOS application',
         },
-        video2: {
-          src: 'https://example.com/videos/frankie-cleaning.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
-          alt: 'Frankie cleaning and returning to base',
-        },
+
         image4: {
           src: 'assets/image6.png',
           alt: 'Frankie voice interaction with ChatGPT',

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 import './Gallery.css';
 import { getTranslations } from '../content/translations';
+import { isYouTubeUrl, getYouTubeEmbedUrl } from '../utils/youtubeHelpers';
 
 interface MediaItem {
   type: 'image' | 'video';
@@ -21,7 +22,6 @@ export function Gallery() {
     { type: 'image', src: t.gallery.media.image1.src, alt: t.gallery.media.image1.alt },
     { type: 'image', src: t.gallery.media.image2.src, alt: t.gallery.media.image2.alt},
     { type: 'image', src: t.gallery.media.image3.src, alt: t.gallery.media.image3.alt },
-    { type: 'video', src: t.gallery.media.video2.src, thumbnail: t.gallery.media.video2.thumbnail, alt: t.gallery.media.video2.alt },
     { type: 'image', src: t.gallery.media.image4.src, alt: t.gallery.media.image4.alt },
   ];
 
@@ -121,10 +121,25 @@ export function Gallery() {
             {mediaItems[currentIndex].type === 'image' ? (
               <img src={mediaItems[currentIndex].src} alt={mediaItems[currentIndex].alt} />
             ) : (
-              <video controls autoPlay>
-                <source src={mediaItems[currentIndex].src} type="video/mp4" />
-                {t.gallery.lightbox.videoNotSupported}
-              </video>
+              (() => {
+                const videoSrc = mediaItems[currentIndex].src;
+                const youtubeEmbedUrl = isYouTubeUrl(videoSrc) ? getYouTubeEmbedUrl(videoSrc) : null;
+                
+                return youtubeEmbedUrl ? (
+                  <iframe
+                    src={youtubeEmbedUrl}
+                    title={mediaItems[currentIndex].alt}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="youtube-iframe"
+                  />
+                ) : (
+                  <video controls autoPlay>
+                    <source src={videoSrc} type="video/mp4" />
+                    {t.gallery.lightbox.videoNotSupported}
+                  </video>
+                );
+              })()
             )}
             <p className="lightbox-caption">{mediaItems[currentIndex].alt}</p>
           </div>
