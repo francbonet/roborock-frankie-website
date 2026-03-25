@@ -66,7 +66,7 @@ export function Gallery() {
               aria-label={item.alt}
             >
               {item.type === 'image' ? (
-                <img src={item.src} alt={item.alt} loading="lazy" />
+                <img src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt} loading="lazy" />
               ) : (
                 <div className="video-thumbnail">
                   <img src={item.thumbnail} alt={item.alt} loading="lazy" />
@@ -119,7 +119,7 @@ export function Gallery() {
           </button>
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             {mediaItems[currentIndex].type === 'image' ? (
-              <img src={mediaItems[currentIndex].src} alt={mediaItems[currentIndex].alt} />
+              <img src={`${import.meta.env.BASE_URL}${mediaItems[currentIndex].src}`} alt={mediaItems[currentIndex].alt} />
             ) : (
               (() => {
                 const videoSrc = mediaItems[currentIndex].src;
