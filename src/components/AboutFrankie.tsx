@@ -25,14 +25,14 @@ export function AboutFrankie() {
         <div className="about-frankie__visuals">
           <div className="about-frankie__image-wrapper">
             <img 
-              src="/roborock-frankie-website/assets/image2.png" 
+              src={new URL('/assets/image2.png', import.meta.url).href}
               alt={t.aboutFrankie.imageAlt}
               className="about-frankie__image"
             />
           </div>
           <div className="about-frankie__image-wrapper">
             <img 
-             src="/roborock-frankie-website/assets/image3.png" 
+              src={new URL('/assets/image3.png', import.meta.url).href}
               alt={t.aboutFrankie.uiAlt}
               className="about-frankie__image"
             />
