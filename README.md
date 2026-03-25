@@ -61,6 +61,18 @@ src/
 - [x] Hello World en 3 idiomes
 - [x] Estructura escalable
 
+## 🚀 Desplegament
+
+El projecte es desplega automàticament a GitHub Pages mitjançant GitHub Actions quan es fa push a la branca `main`.
+
+**URL de producció:** https://[username].github.io/roborock-frankie-website/
+
+### Configuració necessària
+
+1. Anar a Settings > Pages al repositori de GitHub
+2. A "Build and deployment" > "Source", seleccionar "GitHub Actions"
+3. El workflow `.github/workflows/deploy.yml` gestionarà el desplegament automàtic
+
 ## 🔄 Pròxims passos
 
 - Afegir seccions: Hero, Features, Demo, Contact
