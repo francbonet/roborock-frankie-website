@@ -34,15 +34,7 @@
   text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
-.what-can-do__intro {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  text-align: center;
-  color: var(--color-text-secondary);
-  max-width: 800px;
-  margin: 0 auto 4rem;
-  white-space: pre-line;
-}
+
 
 .what-can-do__grid {
   display: grid;
@@ -138,10 +130,7 @@
 
 
 
-  .what-can-do__intro {
-    font-size: 1rem;
-    margin-bottom: 3rem;
-  }
+
 
   .what-can-do__grid {
     grid-template-columns: 1fr;
