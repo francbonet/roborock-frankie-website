@@ -130,20 +130,20 @@ export const translations = {
           alt: 'Frankie responent a comandes de veu',
         },
         image1: {
-          src: 'assets/image4.png',
+          src: '/roborock-frankie-website/assets/image4.png',
           alt: 'Frankie el robot Roborock S5',
         },
         image2: {
-          src: 'assets/image1.png',
+          src: '/roborock-frankie-website/assets/image1.png',
           alt: 'Interfície de pantalla blava de Frankie',
         },
         image3: {
-          src: 'assets/image2.png',
+          src: '/roborock-frankie-website/assets/image2.png',
           alt: 'Aplicació web i iOS de Frankie',
         },
 
         image4: {
-          src: 'assets/image6.png',
+          src: '/roborock-frankie-website/assets/image6.png',
           alt: 'Interacció de veu de Frankie amb ChatGPT',
         },
       },
@@ -301,20 +301,20 @@ export const translations = {
           alt: 'Frankie respondiendo a comandos de voz',
         },
         image1: {
-          src: 'assets/image4.png',
+          src: '/roborock-frankie-website/assets/image4.png',
           alt: 'Frankie el robot Roborock S5',
         },
         image2: {
-          src: 'assets/image1.png',
+          src: '/roborock-frankie-website/assets/image1.png',
           alt: 'Interfaz de pantalla azul de Frankie',
         },
         image3: {
-          src: 'assets/image2.png',
+          src: '/roborock-frankie-website/assets/image2.png',
           alt: 'Aplicación web e iOS de Frankie',
         },
 
         image4: {
-          src: 'assets/image6.png',
+          src: '/roborock-frankie-website/assets/image6.png',
           alt: 'Interacción de voz de Frankie con ChatGPT',
         },
       },
@@ -472,20 +472,20 @@ export const translations = {
           alt: 'Frankie responding to voice commands',
         },
         image1: {
-          src: 'assets/image4.png',
+          src: '/roborock-frankie-website/assets/image4.png',
           alt: 'Frankie the Roborock S5 robot',
         },
         image2: {
-          src: 'assets/image1.png',
+          src: '/roborock-frankie-website/assets/image1.png',
           alt: 'Frankie blue screen interface',
         },
         image3: {
-          src: 'assets/image2.png',
+          src: '/roborock-frankie-website/assets/image2.png',
           alt: 'Frankie web and iOS application',
         },
 
         image4: {
-          src: 'assets/image6.png',
+          src: '/roborock-frankie-website/assets/image6.png',
           alt: 'Frankie voice interaction with ChatGPT',
         },
       },
