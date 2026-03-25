@@ -11,6 +11,13 @@ interface MediaItem {
   alt: string;
 }
 
+const base = import.meta.env.BASE_URL;
+
+function withBase(path: string): string {
+  if (!path || path.startsWith('http') || path.startsWith('//')) return path;
+  return `${base}${path.replace(/^\//, '')}`;
+}
+
 export function Gallery() {
   const { language } = useLanguage();
   const t = getTranslations(language);
@@ -18,11 +25,16 @@ export function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const mediaItems: MediaItem[] = [
-    { type: 'video', src: t.gallery.media.video1.src, thumbnail: t.gallery.media.video1.thumbnail, alt: t.gallery.media.video1.alt },
-    { type: 'image', src: t.gallery.media.image1.src, alt: t.gallery.media.image1.alt },
-    { type: 'image', src: t.gallery.media.image2.src, alt: t.gallery.media.image2.alt},
-    { type: 'image', src: t.gallery.media.image3.src, alt: t.gallery.media.image3.alt },
-    { type: 'image', src: t.gallery.media.image4.src, alt: t.gallery.media.image4.alt },
+    {
+      type: 'video',
+      src: withBase(t.gallery.media.video1.src),
+      thumbnail: withBase(t.gallery.media.video1.thumbnail),
+      alt: t.gallery.media.video1.alt,
+    },
+    { type: 'image', src: withBase(t.gallery.media.image1.src), alt: t.gallery.media.image1.alt },
+    { type: 'image', src: withBase(t.gallery.media.image2.src), alt: t.gallery.media.image2.alt },
+    { type: 'image', src: withBase(t.gallery.media.image3.src), alt: t.gallery.media.image3.alt },
+    { type: 'image', src: withBase(t.gallery.media.image4.src), alt: t.gallery.media.image4.alt },
   ];
 
   const openLightbox = (index: number) => {
@@ -124,7 +136,7 @@ export function Gallery() {
               (() => {
                 const videoSrc = mediaItems[currentIndex].src;
                 const youtubeEmbedUrl = isYouTubeUrl(videoSrc) ? getYouTubeEmbedUrl(videoSrc) : null;
-                
+
                 return youtubeEmbedUrl ? (
                   <iframe
                     src={youtubeEmbedUrl}

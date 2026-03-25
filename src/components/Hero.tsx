@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         <div className="hero-media">
           <img
-            src="/assets/image0.png"
+            src={new URL('/assets/image0.png', import.meta.url).href}
             alt="Frankie - Roborock S5 with AI"
             className="hero-image"
             loading="eager"
