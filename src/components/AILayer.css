@@ -1,6 +1,5 @@
 .ai-layer {
   padding: 4rem 2rem;
-  background: var(--background-primary);
   color: var(--color-text-primary);
 }
 
@@ -32,6 +31,10 @@
   margin-bottom: 1.5rem;
   text-align: center;
   color: var(--color-text-primary);
+}
+
+.ai-layer__content p {
+  text-align: center;
 }
 
 .ai-layer__explanation {

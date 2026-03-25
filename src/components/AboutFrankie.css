@@ -1,6 +1,5 @@
 .about-frankie {
   padding: 4rem 2rem;
-  background: var(--background-primary);
   color: var(--color-text-primary);
   position: relative;
   overflow: hidden;
@@ -68,7 +67,7 @@
 
 .about-frankie__visuals {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -128,10 +127,7 @@
 
 
 
-  .about-frankie__visuals {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+
 }
 
 /* Desktop */
