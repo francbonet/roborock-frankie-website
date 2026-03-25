@@ -1,13 +1,5 @@
 import { Language } from '../context/LanguageContext';
 
-interface Translations {
-  greeting: string;
-  projectTitle: string;
-  projectSubtitle: string;
-}
-
-type TranslationsMap = Record<Language, any>;
-
 export const translations = {
   ca: {
     languageSelector: {
