@@ -22,7 +22,6 @@ export function Gallery() {
     { type: 'image', src: t.gallery.media.image1.src, alt: t.gallery.media.image1.alt },
     { type: 'image', src: t.gallery.media.image2.src, alt: t.gallery.media.image2.alt},
     { type: 'image', src: t.gallery.media.image3.src, alt: t.gallery.media.image3.alt },
-    { type: 'video', src: t.gallery.media.video2.src, thumbnail: t.gallery.media.video2.thumbnail, alt: t.gallery.media.video2.alt },
     { type: 'image', src: t.gallery.media.image4.src, alt: t.gallery.media.image4.alt },
   ];
 
