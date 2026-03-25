@@ -65,7 +65,7 @@ src/
 
 El projecte es desplega automàticament a GitHub Pages mitjançant GitHub Actions quan es fa push a la branca `main`.
 
-**URL de producció:** https://[username].github.io/roborock-chatgpt/
+**URL de producció:** https://[username].github.io/roborock-frankie-website/
 
 ### Configuració necessària
 
