@@ -5,18 +5,7 @@
   overflow: hidden;
 }
 
-.what-can-do::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.05) 0%, transparent 50%);
-  pointer-events: none;
-}
+
 
 .what-can-do__container {
   max-width: 1200px;
@@ -34,15 +23,16 @@
   text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
-.what-can-do__intro {
-  font-size: 1.125rem;
-  line-height: 1.8;
+.what-can-do__container .section-subtitle {
   text-align: center;
-  color: var(--color-text-secondary);
-  max-width: 800px;
-  margin: 0 auto 4rem;
-  white-space: pre-line;
+  color: var(--color-text-primary);
+  font-size: 24px;
+  max-width: 700px;
+  margin: -1rem auto 3rem;
+  line-height: 1.6;
 }
+
+
 
 .what-can-do__grid {
   display: grid;
@@ -138,10 +128,7 @@
 
 
 
-  .what-can-do__intro {
-    font-size: 1rem;
-    margin-bottom: 3rem;
-  }
+
 
   .what-can-do__grid {
     grid-template-columns: 1fr;

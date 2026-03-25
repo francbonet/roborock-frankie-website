@@ -11,7 +11,7 @@ const WhatCanDo: React.FC = () => {
     <section className="what-can-do">
       <div className="what-can-do__container">
         <h2 className="what-can-do__title">{t.title}</h2>
-        <p className="what-can-do__intro">{t.intro}</p>
+        <p className="section-subtitle">{t.intro}</p>
         
         <div className="what-can-do__grid">
           {t.features.map((feature, index) => (

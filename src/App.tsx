@@ -15,8 +15,8 @@ function App() {
     <LanguageProvider>
       <div style={{ position: 'relative' }}>
         <LanguageSelector />
-        <Hero />
       </div>
+      <Hero />
       <AboutFrankie />
       <WhatCanDo />
       <Gallery />

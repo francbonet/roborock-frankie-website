@@ -1,21 +1,11 @@
 .about-frankie {
   padding: 4rem 2rem;
-  background: var(--background-primary);
   color: var(--color-text-primary);
   position: relative;
   overflow: hidden;
 }
 
-.about-frankie::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 40%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
-  pointer-events: none;
-}
+
 
 .about-frankie__container {
   max-width: 1200px;
@@ -68,14 +58,14 @@
 
 .about-frankie__visuals {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
 
 .about-frankie__image-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 66.67%; /* 3:2 aspect ratio */
+  padding-bottom: 50%; /* 2:1 aspect ratio */
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -128,10 +118,7 @@
 
 
 
-  .about-frankie__visuals {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+
 }
 
 /* Desktop */
