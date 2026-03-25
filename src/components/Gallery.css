@@ -141,11 +141,19 @@
 }
 
 .lightbox-content img,
-.lightbox-content video {
+.lightbox-content video,
+.lightbox-content iframe {
   max-width: 100%;
   max-height: calc(90vh - 60px);
   border-radius: 8px;
   box-shadow: 0 0 40px rgba(0, 245, 255, 0.3);
+}
+
+.youtube-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-width: 1200px;
+  border: none;
 }
 
 .lightbox-caption {

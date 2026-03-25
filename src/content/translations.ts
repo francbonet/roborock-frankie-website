@@ -133,8 +133,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://example.com/videos/frankie-demo.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie responent a comandes de veu',
         },
         image1: {
@@ -150,8 +150,8 @@ export const translations = {
           alt: 'Aplicació web i iOS de Frankie',
         },
         video2: {
-          src: 'https://example.com/videos/frankie-cleaning.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          src: 'https://youtu.be/dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie netejant i tornant a la base',
         },
         image4: {
@@ -308,8 +308,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://example.com/videos/frankie-demo.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie respondiendo a comandos de voz',
         },
         image1: {
@@ -325,8 +325,8 @@ export const translations = {
           alt: 'Aplicación web e iOS de Frankie',
         },
         video2: {
-          src: 'https://example.com/videos/frankie-cleaning.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          src: 'https://youtu.be/dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie limpiando y regresando a la base',
         },
         image4: {
@@ -483,8 +483,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://example.com/videos/frankie-demo.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-demo.jpg',
+          src: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie responding to voice commands',
         },
         image1: {
@@ -500,8 +500,8 @@ export const translations = {
           alt: 'Frankie web and iOS application',
         },
         video2: {
-          src: 'https://example.com/videos/frankie-cleaning.mp4',
-          thumbnail: 'https://example.com/thumbnails/frankie-cleaning.jpg',
+          src: 'https://youtu.be/dQw4w9WgXcQ',
+          thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
           alt: 'Frankie cleaning and returning to base',
         },
         image4: {
