@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         <div className="hero-media">
           <img
-            src="/frankie-hero.jpg"
+            src="/assets/image0.png"
             alt="Frankie - Roborock S5 with AI"
             className="hero-image"
             loading="eager"

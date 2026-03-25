@@ -25,14 +25,14 @@ export function AboutFrankie() {
         <div className="about-frankie__visuals">
           <div className="about-frankie__image-wrapper">
             <img 
-              src="/images/frankie-robot.jpg" 
+              src="/assets/image2.png" 
               alt={t.aboutFrankie.imageAlt}
               className="about-frankie__image"
             />
           </div>
           <div className="about-frankie__image-wrapper">
             <img 
-              src="/images/frankie-ui.jpg" 
+             src="/assets/image3.png" 
               alt={t.aboutFrankie.uiAlt}
               className="about-frankie__image"
             />
