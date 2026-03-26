@@ -125,8 +125,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://www.youtube.com/watch?v=m-0wjf8cs1Q',
-          thumbnail: 'https://img.youtube.com/vi/m-0wjf8cs1Q/maxresdefault.jpg',
+          src: 'https://www.youtube.com/watch?v=PznyeIQq7PM',
+          thumbnail: 'https://img.youtube.com/vi/PznyeIQq7PM/maxresdefault.jpg',
           alt: 'Frankie responent a comandes de veu',
         },
         image1: {
@@ -135,16 +135,15 @@ export const translations = {
         },
         image2: {
           src: 'assets/image1.png',
-          alt: 'Interfície de pantalla blava de Frankie',
+          alt: 'Server logs',
         },
         image3: {
           src: 'assets/image2.png',
-          alt: 'Aplicació web i iOS de Frankie',
+          alt: 'Aplicació iOS de Frankie',
         },
-
         image4: {
           src: 'assets/image6.png',
-          alt: 'Interacció de veu de Frankie amb ChatGPT',
+          alt: 'Map',
         },
       },
     },
@@ -296,8 +295,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://www.youtube.com/watch?v=m-0wjf8cs1Q',
-          thumbnail: 'https://img.youtube.com/vi/m-0wjf8cs1Q/maxresdefault.jpg',
+          src: 'https://www.youtube.com/watch?v=PznyeIQq7PM',
+          thumbnail: 'https://img.youtube.com/vi/PznyeIQq7PM/maxresdefault.jpg',
           alt: 'Frankie respondiendo a comandos de voz',
         },
         image1: {
@@ -306,16 +305,15 @@ export const translations = {
         },
         image2: {
           src: 'assets/image1.png',
-          alt: 'Interfaz de pantalla azul de Frankie',
+          alt: 'Server logs',
         },
         image3: {
           src: 'assets/image2.png',
-          alt: 'Aplicación web e iOS de Frankie',
+          alt: 'Aplicación iOS de Frankie',
         },
-
         image4: {
           src: 'assets/image6.png',
-          alt: 'Interacción de voz de Frankie con ChatGPT',
+          alt: 'Map',
         },
       },
     },
@@ -467,8 +465,8 @@ export const translations = {
       },
       media: {
         video1: {
-          src: 'https://www.youtube.com/watch?v=m-0wjf8cs1Q',
-          thumbnail: 'https://img.youtube.com/vi/m-0wjf8cs1Q/maxresdefault.jpg',
+          src: 'https://www.youtube.com/watch?v=PznyeIQq7PM',
+          thumbnail: 'https://img.youtube.com/vi/PznyeIQq7PM/maxresdefault.jpg',
           alt: 'Frankie responding to voice commands',
         },
         image1: {
@@ -477,16 +475,15 @@ export const translations = {
         },
         image2: {
           src: 'assets/image1.png',
-          alt: 'Frankie blue screen interface',
+          alt: 'Server logs',
         },
         image3: {
           src: 'assets/image2.png',
-          alt: 'Frankie web and iOS application',
+          alt: 'Frankie iOS application',
         },
-
         image4: {
           src: 'assets/image6.png',
-          alt: 'Frankie voice interaction with ChatGPT',
+          alt: 'Map',
         },
       },
     },
