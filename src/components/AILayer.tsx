@@ -7,7 +7,7 @@ export function AILayer() {
   const t = translations[language].aiLayer;
 
   return (
-    <section className="ai-layer">
+    <section className="ai-layer" id="ai-layer">
       <div className="ai-layer__container">
         <h2 className="ai-layer__title">{t.title}</h2>
         

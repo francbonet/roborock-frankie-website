@@ -6,9 +6,9 @@ const Hero = () => {
   const { language } = useLanguage();
   const t = getTranslations(language);
 
-  const handleDemoClick = () => {
-    const demoSection = document.getElementById('demo');
-    demoSection?.scrollIntoView({ behavior: 'smooth' });
+  const handleGalleryClick = () => {
+    const gallerySection = document.getElementById('gallery');
+    gallerySection?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleHowItWorksClick = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
           <h1 className="hero-title">{t.hero.title}</h1>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
           <div className="hero-ctas">
-            <button className="cta-primary" onClick={handleDemoClick}>
+            <button className="cta-primary" onClick={handleGalleryClick}>
               {t.hero.ctaDemo}
             </button>
             <button className="cta-secondary" onClick={handleHowItWorksClick}>

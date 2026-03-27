@@ -7,7 +7,7 @@ export function ChallengesLearnings() {
   const t = translations[language].challenges;
 
   return (
-    <section className="challenges-section">
+    <section className="challenges-section" id="challenges">
       <div className="challenges-container">
         <h2 className="challenges-title">{t.title}</h2>
         

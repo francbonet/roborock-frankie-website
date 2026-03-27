@@ -8,7 +8,7 @@ const WhatCanDo: React.FC = () => {
   const t = translations[language].whatCanDo;
 
   return (
-    <section className="what-can-do">
+    <section className="what-can-do" id="what-can-do">
       <div className="what-can-do__container">
         <h2 className="what-can-do__title">{t.title}</h2>
         <p className="section-subtitle">{t.intro}</p>
