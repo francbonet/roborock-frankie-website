@@ -16,16 +16,8 @@ const FinalCTA = () => {
           
           <div className="final-cta-buttons">
             <a 
-              href="https://github.com/roborock-chatgpt" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="mailto:francbonet@gmail.com" 
               className="cta-primary"
-            >
-              {t.buttons.viewProject}
-            </a>
-            <a 
-              href="mailto:contact@example.com" 
-              className="cta-secondary"
             >
               {t.buttons.contact}
             </a>

@@ -7,7 +7,7 @@ const HowItWorks = () => {
   const t = translations[language].howItWorks;
 
   return (
-    <section className="how-it-works">
+    <section className="how-it-works" id="how-it-works">
       <div className="container">
         <h2 className="section-title">{t.title}</h2>
         <p className="section-subtitle">{t.subtitle}</p>

@@ -7,7 +7,7 @@ export function AboutFrankie() {
   const t = getTranslations(language);
 
   return (
-    <section className="about-frankie">
+    <section className="about-frankie" id="about-frankie">
       <div className="about-frankie__container">
         <div className="about-frankie__content">
           <h2 className="about-frankie__title">{t.aboutFrankie.title}</h2>
