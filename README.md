@@ -5,10 +5,6 @@
 
 Multilingual landing page for the Frankie project: an AI-powered interface layer for the Roborock S5 vacuum cleaner, integrating ChatGPT capabilities for enhanced user interaction.
 
-## 📖 Description
-
-Frankie is a web application that serves as the presentation layer for a smart home integration project. The project connects a Roborock S5 vacuum cleaner with ChatGPT, enabling natural language commands and intelligent automation.
-
 ### Key Features
 
 - **Multilingual Support**: Full interface available in Catalan, Spanish, and English
@@ -52,7 +48,7 @@ Frankie is a web application that serves as the presentation layer for a smart h
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/roborock-frankie-website.git
+git clone https://github.com/francbonet/roborock-frankie-website.git
 cd roborock-frankie-website
 ```
 
@@ -122,9 +118,9 @@ roborock-frankie-website/
 
 The application supports three languages:
 
-- **Catalan** (ca) - Default language
+- **English** (en) - Default language
+- **Catalan** (ca) 
 - **Spanish** (es)
-- **English** (en)
 
 Language selection is managed through React Context API and persists across sessions.
 
@@ -132,7 +128,7 @@ Language selection is managed through React Context API and persists across sess
 
 The project is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the `main` branch.
 
-**Live Demo:** https://USERNAME.github.io/roborock-frankie-website/
+**Live Demo:** https://francbonet.github.io/roborock-frankie-website/
 
 ### Deployment Configuration
 
@@ -142,29 +138,9 @@ The deployment workflow is defined in `.github/workflows/deploy.yml` and handles
 - Running linters and type checks
 - Deploying to GitHub Pages
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Code Style
-
-- Follow the existing code style
-- Run `npm run lint` before committing
-- Write meaningful commit messages following [Conventional Commits](https://www.conventionalcommits.org/)
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **Your Name** - Initial work
 
 ## 🙏 Acknowledgments
 
